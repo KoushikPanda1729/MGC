@@ -21,7 +21,7 @@ export default function Navbar() {
   const navLinks = useMemo(
     () => [
       { href: "#home", label: "Home" },
-      { href: "#our-brands", label: "Our Brands" },
+      // { href: "#our-brands", label: "Our Brands" },
       { href: "#testimonial", label: "Testimonials" },
       { href: "/gallery", label: "Gallery" },
       { href: "#about", label: "About" },
@@ -181,8 +181,8 @@ export default function Navbar() {
                 >
                   <SheetHeader className="w-full items-center">
                     <SheetTitle className="text-2xl font-bold text-center">
-                      <span className="text-primary">Bunni</span> Education
-                      Service Pvt Ltd
+                      <span className="text-primary">Manobikash </span> GUIDE
+                      Centre
                     </SheetTitle>
                   </SheetHeader>
 

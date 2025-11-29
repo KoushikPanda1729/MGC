@@ -30,51 +30,51 @@ const fadeInAnimationVariants = {
 const defaultFaqs = [
   {
     id: "faq-1",
-    question: "What is Bunni Education Service Pvt Ltd?",
+    question: "What is Manobikash Guide Centre?",
     answer:
-      "Manobikash GUIDE Centre , established in <strong class='text-black'>2018</strong>, is an EdTech company focused on improving English communication and soft skills through its brands — <strong class='text-black'>Young Guru Academy</strong> and <strong class='text-black'>Talk2Partners</strong>.",
+      "Manobikash GUIDE Centre, established in <strong class='text-black'>2018</strong>, is a trusted educational institute in Medinipur offering school tuition, spoken English training, skill development classes, and career guidance for students of all levels.",
   },
   {
     id: "faq-2",
-    question: "What are your main brands and services?",
+    question: "What services do you offer?",
     answer:
-      "Our main brands are <strong class='text-black'>Young Guru Academy</strong> and <strong class='text-black'>Talk2Partners</strong>.\n\nWe offer <strong class='text-black'>Spoken English training</strong>, <strong class='text-black'>Soft Skills programs</strong>, <strong class='text-black'>Interview Preparation</strong>, <strong class='text-black'>Career Counselling , Seminars, Webinars</strong> , and other learning opportunities for learners of all backgrounds.",
+      "We offer <strong class='text-black'>school academic tuition</strong>, <strong class='text-black'>Spoken English classes</strong>, <strong class='text-black'>skill-building programs</strong>, <strong class='text-black'>interview preparation</strong>, <strong class='text-black'>career counselling</strong>, and other learning support designed to help students grow academically and personally.",
   },
   {
     id: "faq-3",
     question: "Who can join your programs?",
     answer:
-      "Anyone —  <strong class='text-black'> students, job seekers, professionals, or corporate employees </strong> — who wants to improve their English speaking , confidence, and communication skills can join our programs.",
+      "Our programs are open for <strong class='text-black'>school students, college students, job seekers, and anyone</strong> who wants to improve academically or enhance communication and personality development skills.",
   },
   {
     id: "faq-4",
-    question: "What makes Bunni Education Service unique?",
+    question: "What makes Manobikash Guide Centre unique?",
     answer:
-      "We combine <strong class='text-black'>real conversation practice</strong>, <strong class='text-black'>personalized guidance</strong>, and <strong class='text-black'>modern technology</strong> to make English learning <strong class='text-black'>easy</strong>, <strong class='text-black'>practical</strong>, and <strong class='text-black'>affordable</strong> for everyone.",
+      "We focus on <strong class='text-black'>personalized attention</strong>, <strong class='text-black'>experienced teachers</strong>, <strong class='text-black'>small batch sizes</strong>, and a <strong class='text-black'>supportive learning environment</strong> that helps every student strengthen fundamentals and gain confidence.",
   },
   {
     id: "faq-5",
     question: "Do you provide online and offline classes?",
     answer:
-      "<strong class='text-black'>Yes</strong>. We offer both <strong class='text-black'>online</strong> and <strong class='text-black'>offline</strong> learning options.\n\nLearners can study from anywhere using the <strong class='text-black'>Talk2Partners App</strong> or attend <strong class='text-black'>offline</strong> sessions at selected centers.",
+      "<strong class='text-black'>Yes</strong>. We provide both <strong class='text-black'>online</strong> and <strong class='text-black'>offline</strong> learning modes, allowing students to choose the option that fits their schedule and learning style.",
   },
   {
     id: "faq-6",
     question: "What is your teaching methodology?",
     answer:
-      "Our approach blends <strong class='text-black'>interactive learning</strong>, <strong class='text-black'>real-life speaking practice</strong>, <strong class='text-black'>short video lessons</strong>, and <strong class='text-black'>one-to-one guidance</strong> to help learners build fluency and confidence effectively.",
+      "Our teaching method focuses on <strong class='text-black'>concept clarity</strong>, <strong class='text-black'>regular assessments</strong>, <strong class='text-black'>practical learning</strong>, and <strong class='text-black'>interactive teaching</strong> to help students excel in both academics and communication.",
   },
   {
     id: "faq-7",
     question: "Do you provide certificates?",
     answer:
-      "<strong class='text-black'>Yes</strong>. Participants receive a <strong class='text-black'>Certificate of Participation</strong> at the time of the competition as a recognition of their effort and performance.",
+      "<strong class='text-black'>Yes</strong>. Students receive certificates for specific training programs such as Spoken English, Personality Development, and other skill-based courses.",
   },
   {
     id: "faq-8",
     question: "How can I get more information or enroll?",
     answer:
-      "You can visit our <strong class='text-black'>official website</strong>, download the <strong class='text-black'>Talk2Partners App</strong>, or contact us at <strong class='text-black'>info@bunnieducation.com</strong> for more details about enrollment and upcoming programs.",
+      "You can visit our <strong class='text-black'>Manobikash Guide Centre</strong> branch, contact us directly, or reach us through <strong class='text-black'>email</strong> for enrollment details, batch timings, and admissions.",
   },
 ];
 
@@ -124,9 +124,9 @@ export default function FaqSection() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Everything you need to know about Bunni Education Service Pvt Ltd
-            and how to transform your skills through flexible online courses
-            with expert guidance.
+            Everything you need to know about Manobikash Guide Centre and how
+            our academic and skill-development programs help students grow with
+            expert guidance.
           </motion.p>
         </div>
 

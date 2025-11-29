@@ -6,8 +6,8 @@ export default function Logo() {
   return (
     <Link href={"/"}>
       <Image
-        src="/images/bunni_education_logo.jpeg"
-        alt="bunni_education Logo"
+        src="/images/center_logo.jpeg"
+        alt="GUIDE_Centre Logo"
         width={50}
         height={50}
         className="object-contain rounded-full"

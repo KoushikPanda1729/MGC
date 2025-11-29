@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import AboutUsSection from "@/components/about-us";
 import FaqSection from "@/components/faq";
 import HeroSection from "@/components/hero";
-import OurBrandsSection from "@/components/our-brands";
+import CourseSections from "@/components/courses";
 import TestimonalSection from "@/components/testimonal";
 import { siteConfig } from "@/config/seo";
 import TeamSection from "../components/team";
+import FeatureSections from "../components/features";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -30,7 +31,8 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
-      {/* <OurBrandsSection /> */}
+      <FeatureSections />
+      <CourseSections />
       <TestimonalSection />
       <AboutUsSection />
       <TeamSection />

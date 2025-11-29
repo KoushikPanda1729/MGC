@@ -5,31 +5,31 @@ import React from "react";
 export default function TeamSection() {
   const teamMembers = [
     {
-      name: "Afsar Sir",
-      role: "Founder & Director",
+      name: "Jyotirmoy Dash",
+      role: "Founder & CEO",
       description:
-        "Visionary leader with 10+ years of experience in education and skill development. Founded Bunni Education Service to empower students across India.",
-      image: "/images/team/afsar-sir.jpg", // Placeholder - replace with actual image
+        "Founder of Manobikash Guide Centre, committed to providing quality academic support, spoken English training, and personal guidance to students across Medinipur. With a passion for teaching and community development, he has played a key role in shaping the institute since its early years.",
+      image: "/images/founder_image.jpg",
       linkedin: "#",
-      email: "afsar@bunnies.in",
+      email: "jyotirmoy@manobikash.in",
     },
     {
       name: "Koushik Panda",
-      role: "Software engineer",
+      role: "Software Engineer",
       description:
         "Technology expert driving innovation in digital learning platforms and creating seamless educational experiences.",
-      image: "/images/team/team-member-2.jpg", // Placeholder
+      image: "/images/software_engineer.jpg",
       linkedin: "#",
-      email: "koushik@bunnies.in",
+      email: "koushik@gmail.com",
     },
     {
       name: "Academic Team",
-      role: "Curriculum Specialists",
+      role: "Lead Educators",
       description:
-        "Dedicated team of educators and content creators ensuring quality education and student success.",
-      image: "/images/team/team-member-3.jpg", // Placeholder
+        "A highly dedicated group of teachers who specialise in school tuition, spoken English, skill development, and exam preparation—ensuring quality education for every student.",
+      image: "/images/center_logo.jpeg",
       linkedin: "#",
-      email: "academic@bunnies.in",
+      email: "academic@manobikash.in",
     },
   ];
 
@@ -57,22 +57,11 @@ export default function TeamSection() {
               {/* Profile Image */}
               <div className="relative mb-6">
                 <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">
-                  <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/20 dark:to-purple-900/20 flex items-center justify-center">
-                    {/* Placeholder Avatar */}
-                    <svg
-                      className="w-20 h-20 text-primary"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                      />
-                    </svg>
-                  </div>
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Decorative Ring */}

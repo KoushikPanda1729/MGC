@@ -11,13 +11,11 @@ import { IoLogoYoutube } from "react-icons/io";
 import { IoMdMail } from "react-icons/io";
 import Link from "next/link";
 import Logo from "./logo";
-
 const data = {
-  facebookLink:
-    "https://www.facebook.com/groups/FreeOnlineEnglishSpeakingCoursegroups",
-  instaLink: "https://www.instagram.com/youngguruacademy2018/?hl=en",
-  youtubeLink: "https://www.youtube.com/c/YOUNGGURUACADEMY2020/featured",
-  linkedinLink: "https://www.linkedin.com/in/afsar-khan-12065017a/",
+  facebookLink: "https://www.facebook.com/monobikashguidecentre",
+  instaLink: "#", // Add real link if available
+  youtubeLink: "https://www.youtube.com", // Replace with actual channel if needed
+  linkedinLink: "#",
 
   quickLinks: {
     home: "#home",
@@ -35,18 +33,18 @@ const data = {
   },
 
   contact: {
-    address: "D-494, G/F, West Vinod Nagar, Mandawali, Delhi - 92",
-    phone: "+91 9560998990",
-    email: "Info@bunnieducation.com",
-    whatsapp: "+91 95609 98990",
+    address: "Patna Bazar, Jugnitala Main Road, Medinipur, West Bengal",
+    phone: "+91 9000000000",
+    email: "info@manobikash.in",
+    whatsapp: "+91 90000 00000",
   },
 
   company: {
-    name: "Bunni Education Service Pvt Ltd",
+    name: "Manobikash Guide Centre",
   },
 
   stores: {
-    playStore: "https://play.google.com/store/apps/details?id=co.classplus.yga",
+    playStore: "#",
     appStore: "#",
   },
 };
@@ -109,7 +107,7 @@ export default function FooterSection() {
               <div className="flex items-center gap-3">
                 <Logo />
                 <span className="text-xl font-semibold">
-                  Bunni Education Service Pvt Ltd
+                  Manobikash Guide Centre
                   <sup className="text-xs">®</sup>
                 </span>
               </div>

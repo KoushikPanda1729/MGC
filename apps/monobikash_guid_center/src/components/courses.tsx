@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion } from "motion/react";
-import Image from "next/image";
 import { Button } from "@t2p-admin/ui/components/button";
 import {
   Card,
@@ -15,125 +14,113 @@ import { Badge } from "@t2p-admin/ui/components/badge";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-type CourseType = "group" | "personal" | "recorded";
+type CourseType = "middle" | "secondary" | "higher";
 
 export default function CourseSection() {
-  const [selectedHeading] = useState("What We're Currently Offering");
-  const [activeTab, setActiveTab] = useState<CourseType>("group");
+  const [selectedHeading] = useState("Our Academic Programs");
+  const [activeTab, setActiveTab] = useState<CourseType>("middle");
 
   const coursesData = {
-    group: [
+    middle: [
       {
-        title: "Group Batch - Basic",
-        description: "Perfect for beginners starting their journey.",
+        title: "Class 6 (WBBSE)",
+        description: "Strong foundation in WB Board curriculum for Class 6.",
         image: "/courses/course.jpeg",
-        duration: "3 Months",
-        price: "₹ 299",
-        originalPrice: "₹ 999",
-        link: "https://play.google.com/store/apps/details?id=co.classplus.yga",
-        includes: ["Live Sessions on Zoom", "Chat Support 10 AM – 8 PM"],
-        learningMaterial: ["50 Grammar Videos", "800 Vocabularies"],
-        outcomes: ["Basic conversations", "Simple sentences"],
+        duration: "Annual Program",
+        price: "₹800/month",
+        originalPrice: "₹1000",
+        link: "#contact",
+        includes: ["Bengali, English, Math, Science, Social Science", "Weekly Tests"],
+        learningMaterial: ["WBBSE Textbooks", "Chapter-wise Practice Sheets"],
+        outcomes: ["Strong Foundation", "School Topper"],
       },
       {
-        title: "Group Batch - Intermediate",
-        description: "Build confidence in speaking English.",
+        title: "Class 7 (WBBSE)",
+        description: "Comprehensive WB Board preparation for Class 7.",
         image: "/courses/course.jpeg",
-        duration: "4 - 6 Months",
-        price: "₹ 499",
-        originalPrice: "₹ 1,999",
-        link: "https://play.google.com/store/apps/details?id=co.classplus.yga",
-        includes: ["Live Sessions on Zoom", "Chat Support 10 AM – 8 PM"],
-        learningMaterial: ["75 Grammar Videos", "1400 Vocabularies"],
-        outcomes: ["Speak confidently", "Daily conversations"],
+        duration: "Annual Program",
+        price: "₹900/month",
+        originalPrice: "₹1100",
+        link: "#contact",
+        includes: ["All WBBSE Subjects", "Regular Assessments"],
+        learningMaterial: ["WBBSE Syllabus Based", "Model Questions"],
+        outcomes: ["Concept Mastery", "Academic Excellence"],
       },
       {
-        title: "Group Batch - Advanced",
-        description: "Master fluent English communication.",
+        title: "Class 8 (WBBSE)",
+        description: "Prepare for Madhyamik with strong Class 8 foundation.",
         image: "/courses/course.jpeg",
-        duration: "6 - 8 Months",
-        price: "₹ 799",
-        originalPrice: "₹ 2,999",
-        link: "https://play.google.com/store/apps/details?id=co.classplus.yga",
-        includes: ["Live Sessions on Zoom", "Advanced Materials"],
-        learningMaterial: ["100 Grammar Videos", "2000 Vocabularies"],
-        outcomes: ["Fluent communication", "Professional speaking"],
-      },
-    ],
-    personal: [
-      {
-        title: "Personal Coach - Starter",
-        description: "Get started with personalized attention.",
-        image: "/courses/course.jpeg",
-        duration: "1 Month",
-        price: "₹ 999",
-        originalPrice: "₹ 2,499",
-        link: "https://play.google.com/store/apps/details?id=co.classplus.yga",
-        includes: ["One-on-One Sessions", "Flexible Scheduling"],
-        learningMaterial: ["Custom Materials", "50 Grammar Videos"],
-        outcomes: ["Personal goals", "Quick improvement"],
-      },
-      {
-        title: "Personal Coach - Pro",
-        description: "Complete transformation package.",
-        image: "/courses/course.jpeg",
-        duration: "3 - 4 Months",
-        price: "₹ 1,999",
-        originalPrice: "₹ 4,999",
-        link: "https://play.google.com/store/apps/details?id=co.classplus.yga",
-        includes: ["One-on-One Sessions", "Flexible Scheduling"],
-        learningMaterial: ["Custom Materials", "75 Grammar Videos"],
-        outcomes: ["Professional skills", "Interview prep"],
-      },
-      {
-        title: "Personal Coach - Premium",
-        description: "Intensive coaching for excellence.",
-        image: "/courses/course.jpeg",
-        duration: "6 Months",
-        price: "₹ 3,499",
-        originalPrice: "₹ 7,999",
-        link: "https://play.google.com/store/apps/details?id=co.classplus.yga",
-        includes: ["One-on-One Sessions", "Priority Support"],
-        learningMaterial: ["Premium Materials", "100 Grammar Videos"],
-        outcomes: ["Expert level fluency", "Business English"],
+        duration: "Annual Program",
+        price: "₹1000/month",
+        originalPrice: "₹1200",
+        link: "#contact",
+        includes: ["Complete WBBSE Syllabus", "Unit Tests"],
+        learningMaterial: ["Board Prescribed Books", "Advanced Practice"],
+        outcomes: ["Madhyamik Ready", "Top Grades"],
       },
     ],
-    recorded: [
+    secondary: [
       {
-        title: "Recorded Course - Essentials",
-        description: "Essential lessons for quick learning.",
+        title: "Class 9 (WBBSE)",
+        description: "Build strong base for Madhyamik Pariksha (Class 10).",
         image: "/courses/course.jpeg",
-        duration: "6 Months Access",
-        price: "₹ 49",
-        originalPrice: "₹ 499",
-        link: "https://play.google.com/store/apps/details?id=co.classplus.yga",
-        includes: ["6 Months Access", "Offline Download"],
-        learningMaterial: ["40 Grammar Videos", "800 Vocabularies"],
-        outcomes: ["Basic foundation", "Self-learning"],
+        duration: "Annual Program",
+        price: "₹1100/month",
+        originalPrice: "₹1300",
+        link: "#contact",
+        includes: ["All Madhyamik Subjects", "Monthly Mock Tests"],
+        learningMaterial: ["WBBSE Books", "Previous Year Questions"],
+        outcomes: ["Madhyamik Foundation", "Strong Concepts"],
       },
       {
-        title: "Recorded Course - Complete",
-        description: "Complete course with lifetime access.",
+        title: "Class 10 - Madhyamik (WBBSE)",
+        description: "Complete preparation for WB Madhyamik Pariksha.",
         image: "/courses/course.jpeg",
-        duration: "Lifetime Access",
-        price: "₹ 99",
-        originalPrice: "₹ 899",
-        link: "https://play.google.com/store/apps/details?id=co.classplus.yga",
-        includes: ["Lifetime Access", "Offline Download"],
-        learningMaterial: ["75 Grammar Videos", "1400 Vocabularies"],
-        outcomes: ["Strong foundation", "Self-paced learning"],
+        duration: "Annual Program",
+        price: "₹1200/month",
+        originalPrice: "₹1500",
+        link: "#contact",
+        includes: ["Full Madhyamik Coverage", "Board Pattern Tests", "Doubt Classes"],
+        learningMaterial: ["WBBSE Syllabus", "Last 10 Years Papers", "Sample Papers"],
+        outcomes: ["Madhyamik Success", "90%+ Target"],
+      },
+    ],
+    higher: [
+      {
+        title: "Class 11 - Science (WBCHSE)",
+        description: "Complete WB HS Science stream preparation.",
+        image: "/courses/course.jpeg",
+        duration: "Annual Program",
+        price: "₹1500/month",
+        originalPrice: "₹1800",
+        link: "#contact",
+        includes: ["Physics, Chemistry, Math/Biology", "Bengali/English", "Weekly Tests"],
+        learningMaterial: ["WBCHSE Textbooks", "Reference Materials"],
+        outcomes: ["HS Foundation", "WBJEE Preparation"],
       },
       {
-        title: "Recorded Course - Master",
-        description: "Premium content for mastery.",
+        title: "Class 11 - Commerce (WBCHSE)",
+        description: "Expert coaching for WB HS Commerce stream.",
         image: "/courses/course.jpeg",
-        duration: "Lifetime Access",
-        price: "₹ 199",
-        originalPrice: "₹ 1,499",
-        link: "https://play.google.com/store/apps/details?id=co.classplus.yga",
-        includes: ["Lifetime Access", "Premium Content"],
-        learningMaterial: ["120 Grammar Videos", "2500 Vocabularies"],
-        outcomes: ["Complete mastery", "Advanced skills"],
+        duration: "Annual Program",
+        price: "₹1300/month",
+        originalPrice: "₹1600",
+        link: "#contact",
+        includes: ["Accountancy, Business Studies, Economics", "Regular Practice"],
+        learningMaterial: ["WBCHSE Syllabus Based", "Case Studies"],
+        outcomes: ["Commerce Excellence", "HS Ready"],
+      },
+      {
+        title: "Class 12 - Higher Secondary (WBCHSE)",
+        description: "Complete preparation for WB Higher Secondary Exam.",
+        image: "/courses/course.jpeg",
+        duration: "Annual Program",
+        price: "₹1600/month",
+        originalPrice: "₹2000",
+        link: "#contact",
+        includes: ["All HS Subjects", "Board Pattern Tests", "Special Doubt Sessions"],
+        learningMaterial: ["WBCHSE Study Material", "Previous Year Papers", "Model Papers"],
+        outcomes: ["HS Exam Success", "95%+ Target"],
       },
     ],
   };
@@ -158,7 +145,7 @@ export default function CourseSection() {
           >
             {selectedHeading.split(" ").map((word, index) => (
               <span key={index}>
-                {["Offering", "Providing", "Courses", "Path"].includes(word) ? (
+                {["Academic", "Programs"].includes(word) ? (
                   <span className="bg-primary from-foreground via-blue-300 to-primary bg-clip-text text-transparent dark:bg-gradient-to-b">
                     {word}
                   </span>
@@ -175,9 +162,9 @@ export default function CourseSection() {
             transition={{ duration: 1, delay: 0.5 }}
             className="mb-8 mt-2 text-muted-foreground sm:text-lg"
           >
-            Choose the perfect course package for your English learning goals.
+            Comprehensive coaching for classes 6 to 12 with expert faculty.
             <br className="hidden sm:block" />
-            Start your journey toward confident speaking today.
+            Build a strong foundation and excel in your academic journey.
           </motion.p>
         </div>
 
@@ -190,37 +177,37 @@ export default function CourseSection() {
         >
           <div className="inline-flex items-center gap-2 p-1 bg-muted rounded-lg">
             <button
-              onClick={() => setActiveTab("group")}
+              onClick={() => setActiveTab("middle")}
               className={cn(
                 "px-6 py-2 rounded-md text-sm font-medium transition-all",
-                activeTab === "group"
+                activeTab === "middle"
                   ? "bg-primary text-primary-foreground shadow-sm"
                   : "text-muted-foreground hover:text-foreground"
               )}
             >
-              Group Batch
+              Class 6-8
             </button>
             <button
-              onClick={() => setActiveTab("personal")}
+              onClick={() => setActiveTab("secondary")}
               className={cn(
                 "px-6 py-2 rounded-md text-sm font-medium transition-all",
-                activeTab === "personal"
+                activeTab === "secondary"
                   ? "bg-primary text-primary-foreground shadow-sm"
                   : "text-muted-foreground hover:text-foreground"
               )}
             >
-              Personal Coach
+              Class 9-10
             </button>
             <button
-              onClick={() => setActiveTab("recorded")}
+              onClick={() => setActiveTab("higher")}
               className={cn(
                 "px-6 py-2 rounded-md text-sm font-medium transition-all",
-                activeTab === "recorded"
+                activeTab === "higher"
                   ? "bg-primary text-primary-foreground shadow-sm"
                   : "text-muted-foreground hover:text-foreground"
               )}
             >
-              Recorded Course
+              Class 11-12
             </button>
           </div>
         </motion.div>
@@ -241,19 +228,26 @@ export default function CourseSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex justify-center"
             >
-              <Card className="overflow-hidden rounded-xl shadow-md border pt-0 w-full max-w-[400px] h-[700px] flex flex-col">
-                {/* Image */}
-                <div className="relative w-full h-74 flex-shrink-0">
-                  <Image
-                    src={course.image}
-                    alt={course.title}
-                    fill
-                    className="rounded-t-xl object-fill"
-                  />
+              <Card className="overflow-hidden rounded-xl shadow-md border pt-0 w-full max-w-[400px] flex flex-col">
+                {/* Gradient Header */}
+                <motion.div
+                  className="relative w-full h-48 flex-shrink-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center rounded-t-xl"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <motion.h3
+                    className="text-white text-3xl font-bold text-center px-4"
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                  >
+                    {course.title}
+                  </motion.h3>
                   <Badge className="absolute top-2 left-2 bg-yellow-400 text-black rounded-full px-2 py-0.5 text-xs font-medium">
                     {course.duration}
                   </Badge>
-                </div>
+                </motion.div>
 
                 {/* Text Content */}
                 <CardHeader className="pb-2 pt-3 px-4 flex-shrink-0">
@@ -331,15 +325,17 @@ export default function CourseSection() {
                       <span className="text-lg font-bold text-gray-900">
                         {course.price}
                       </span>
-                      <span className="text-xs text-gray-400 line-through">
-                        {course.originalPrice}
-                      </span>
+                      {course.originalPrice && (
+                        <span className="text-xs text-gray-400 line-through">
+                          {course.originalPrice}
+                        </span>
+                      )}
                     </div>
                     <Button
                       asChild
                       className="px-3 sm:px-4 py-1 h-8 text-xs sm:text-sm flex-shrink-0 ml-2"
                     >
-                      <Link href={course.link}>Enroll Now</Link>
+                      <Link href={course.link}>Register Now</Link>
                     </Button>
                   </div>
                 </CardFooter>

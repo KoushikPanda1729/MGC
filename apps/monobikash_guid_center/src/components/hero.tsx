@@ -67,6 +67,7 @@ export default function HeroSection() {
 
             {/* Key Features - Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
+              {/* Card 1 – Class 6–8 Coaching */}
               <div className="p-5 rounded-xl border bg-card hover:shadow-md transition-shadow">
                 <div className="flex flex-col items-center text-center space-y-2">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-2">
@@ -85,14 +86,15 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-foreground">
-                    Online
+                    Class 6–8 Coaching
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Digital classes & learning support
+                    Strong foundation-building for all major school subjects
                   </p>
                 </div>
               </div>
 
+              {/* Card 2 – Class 9–10 Coaching */}
               <div className="p-5 rounded-xl border bg-card hover:shadow-md transition-shadow">
                 <div className="flex flex-col items-center text-center space-y-2">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-2">
@@ -111,14 +113,16 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-foreground">
-                    Offline
+                    Class 9–10 Coaching
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Classroom coaching & guidance
+                    Complete syllabus support with regular tests & doubt
+                    clearing
                   </p>
                 </div>
               </div>
 
+              {/* Card 3 – Class 11–12 Coaching */}
               <div className="p-5 rounded-xl border bg-card hover:shadow-md transition-shadow">
                 <div className="flex flex-col items-center text-center space-y-2">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-2">
@@ -132,15 +136,15 @@ export default function HeroSection() {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0-00-2 2v10a2 2 0 002 2z"
+                        d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-foreground">
-                    Professional
+                    Class 11–12 Coaching
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Skill-building & personality development
+                    Expert guidance for board exams & competitive preparation
                   </p>
                 </div>
               </div>

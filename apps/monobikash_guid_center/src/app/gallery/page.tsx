@@ -4,10 +4,12 @@ import { siteConfig } from "@/config/seo";
 
 export const metadata: Metadata = {
   title: "Gallery",
-  description: "Explore our vibrant community and educational journey through these moments at Bunni Education Service Pvt Ltd",
+  description:
+    "Explore moments from our offline classes, events, and student activities at Manobikash Guide Centre.",
   openGraph: {
     title: `Gallery - ${siteConfig.name}`,
-    description: "Explore our vibrant community and educational journey through these moments",
+    description:
+      "See real classroom moments, student interactions, and learning experiences from Manobikash Guide Centre.",
     type: "website",
     url: `${siteConfig.url}/gallery`,
     images: [

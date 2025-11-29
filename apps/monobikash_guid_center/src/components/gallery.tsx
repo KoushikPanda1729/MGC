@@ -13,57 +13,53 @@ import { Button } from "@t2p-admin/ui/components/button";
 const galleryImages = [
   {
     id: 1,
-    url: "/images/debate_competition.jpg",
-    alt: "Debate Competition - Young Guru Academy",
+    url: "https://scontent.fixb4-1.fna.fbcdn.net/v/t39.30808-6/484172548_1093199516157847_8757313203464467693_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=0DCaYK2_cV4Q7kNvwHp53HE&_nc_oc=Adkq0cHg6gLTwzgz0JoGc7j3ZWARjb7dqM7YH5V7yYUDDmYxps7DDkJ-2acU3M83uRo&_nc_zt=23&_nc_ht=scontent.fixb4-1.fna&_nc_gid=sLYPNi6gpnXZGuSfT1lYiw&oh=00_Afgh3waqOxQAlufkvUdqUqSdsYPQD_BLaXocvYNl-2uh9A&oe=6930F549",
+    alt: "Students Activity - Manobikash Guide Centre",
   },
   {
     id: 2,
-    url: "/images/public_speaking.jpg",
-    alt: "Public Speaking - Young Guru Academy",
+    url: "https://scontent.fixb4-1.fna.fbcdn.net/v/t39.30808-6/485951137_1100052822139183_794776518194228385_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Bg6i0RVFEuUQ7kNvwESC9iV&_nc_oc=Adl11lSuEqtN75MZcHBXx4miLpz-i_KJM6ZFle4DT6Z1uv-ctECgydpQCClhJH4n9sA&_nc_zt=23&_nc_ht=scontent.fixb4-1.fna&_nc_gid=YriTlhCrtGHVPSC4lr3N5A&oh=00_AfjWNQkxek2YwW_H5saBokcphhGweig46PI9_cmHVrkJDQ&oe=69310711",
+    alt: "Classroom Session - Manobikash Guide Centre",
   },
   {
     id: 3,
-    url: "/images/q&a_session.jpg",
-    alt: "Q & A Session - Young Guru Academy",
+    url: "https://scontent.fixb4-1.fna.fbcdn.net/v/t39.30808-6/485962808_1100052845472514_3789085118709553466_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=09dxOH5n0IMQ7kNvwEqReJU&_nc_oc=AdmmkBedqBVU8Bz-Lv8OvUA-dRQMz6SADUsEYuIsTErIWG3_173Qdsacqrq-HsGYle0&_nc_zt=23&_nc_ht=scontent.fixb4-1.fna&_nc_gid=wSKjyeyEq5P6FqkFRlqx5Q&oh=00_Afjv2WbqsGuai3O1ENtuw3PmswgoECKvjnX34JVluOlHnw&oe=6931058C",
+    alt: "Achievement Ceremony - Manobikash Guide Centre",
   },
   {
     id: 4,
-    url: "/images/standing_session.jpg",
-    alt: "Standing Session - Young Guru Academy",
-  },
-];
-
-const galleryVideos = [
-  {
-    id: 1,
-    youtubeId: "RspV9xg1T44",
-    thumbnail: "https://img.youtube.com/vi/RspV9xg1T44/hqdefault.jpg",
-  },
-  {
-    id: 2,
-    youtubeId: "QQmW7IUcl50",
-    thumbnail: "https://img.youtube.com/vi/QQmW7IUcl50/hqdefault.jpg",
-  },
-  {
-    id: 3,
-    youtubeId: "sju21iJBuyE",
-    thumbnail: "https://img.youtube.com/vi/sju21iJBuyE/hqdefault.jpg",
-  },
-  {
-    id: 4,
-    youtubeId: "NOuL104PkKc",
-    thumbnail: "https://img.youtube.com/vi/NOuL104PkKc/hqdefault.jpg",
-    url: "https://www.youtube.com/watch?v=NOuL104PkKc",
+    url: "https://scontent.fixb4-1.fna.fbcdn.net/v/t39.30808-6/491988221_1122926866518445_5625229780507695187_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=IHDTfT89BTAQ7kNvwH9DlIx&_nc_oc=Adm318i7thcqQsGYPrwv_K0QDyxfSPc5yb4zSWGUwPtAxByRraDZordKMAySskxF-Aw&_nc_zt=23&_nc_ht=scontent.fixb4-1.fna&_nc_gid=LbxBKEscl_qoPCh_Q2sSlA&oh=00_AfgVi0Xdokb1Kz8M0XB5PUI1App2OsVq1btYNATxxZu4Pw&oe=693107ED",
+    alt: "Student Success - Manobikash Guide Centre",
   },
   {
     id: 5,
-    youtubeId: "txnt8rRYsUA",
-    thumbnail: "https://img.youtube.com/vi/txnt8rRYsUA/hqdefault.jpg",
+    url: "https://scontent.fixb4-1.fna.fbcdn.net/v/t39.30808-6/494764473_1134745802003218_7293921621459059810_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=sSlTxQbk9XEQ7kNvwGUJHRF&_nc_oc=Adm8faifQsRH9Fryty2eAxmdFyk6k_ksosOV_Vd0TNTbuHvX_2ttrfMnUPtAkFXk1S0&_nc_zt=23&_nc_ht=scontent.fixb4-1.fna&_nc_gid=olmo_agexIWZr4POp9YqZA&oh=00_AfjvprjVkCzczdPr2WXPWfZdcWzpx50bRA2gg56ErS9WWA&oe=69311131",
+    alt: "Learning Environment - Manobikash Guide Centre",
   },
   {
     id: 6,
-    youtubeId: "y9K4QxX83sI",
-    thumbnail: "https://img.youtube.com/vi/y9K4QxX83sI/hqdefault.jpg",
+    url: "https://scontent.fixb4-1.fna.fbcdn.net/v/t39.30808-6/518304557_1186640720147059_5291493154162694086_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=schD2c4fgngQ7kNvwGJVmfH&_nc_oc=AdmCjq5mlHDvVpuqnHXfvK7rBsg9GaELZx6vl_xzo7PqYYG0F1bKhKG0bOBNUguaTsM&_nc_zt=23&_nc_ht=scontent.fixb4-1.fna&_nc_gid=KDkfKgUJkkWgQMvkTHaf9g&oh=00_Afj1nzHTR_dBjYFBaXkoKeYmcrGKJmxFo2WVqYf6cql6pA&oe=693123BE",
+    alt: "Interactive Class - Manobikash Guide Centre",
+  },
+  {
+    id: 7,
+    url: "https://scontent.fixb4-1.fna.fbcdn.net/v/t39.30808-6/531930436_1215959760548488_3783783490103317218_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=q9dt3-HCXTsQ7kNvwF-Vk3w&_nc_oc=Adkj75O-PC7jStZgipHbWD1oHP8zqH_AXh_fROFrdXlmWXTfcRxCpNXX48yHt5HTm1k&_nc_zt=23&_nc_ht=scontent.fixb4-1.fna&_nc_gid=NDY0dgKel6wWNMWZolC7yQ&oh=00_AfgSkviZ5z3wUa4tLi0MQbEZSCfWlIJBrBftP7utWbt6Tw&oe=693102D9",
+    alt: "Study Group - Manobikash Guide Centre",
+  },
+  {
+    id: 8,
+    url: "https://scontent.fixb4-1.fna.fbcdn.net/v/t39.30808-6/484109992_1093199592824506_5549970847149146677_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=HzZJ_C5oe6YQ7kNvwFVJsGS&_nc_oc=AdkzqXjmaOnHFGXoScLkcf9pIUEkK7uSqiP9Q1-oaQQatD3Lpc6wSO4gxNeefOKZhJM&_nc_zt=23&_nc_ht=scontent.fixb4-1.fna&_nc_gid=FrnTP6mdMnQFDoJM6Tb4kw&oh=00_AfiecSDsoiwDGifjYMF62t-1UtZMygeELtMwAe-OkfKn3w&oe=693129B3",
+    alt: "Educational Event - Manobikash Guide Centre",
+  },
+  {
+    id: 9,
+    url: "https://scontent.fixb4-1.fna.fbcdn.net/v/t39.30808-6/482060532_1087986810012451_5663149904587740984_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Dv3NQ9EfK2oQ7kNvwH84lcw&_nc_oc=AdkhVTGSdQ2Cr09uEqiLQ4Jd3bt0d-016YEKFVqSnEqSbiRuSLZZs3CxgtUDlKwUjzQ&_nc_zt=23&_nc_ht=scontent.fixb4-1.fna&_nc_gid=5GbQ5V34DAVr0XyaG1dfow&oh=00_AfiJdB7xcYWjxcf7dHigp0w0RvWezGDu8AMP3hYBz0bANQ&oe=6930FEA7",
+    alt: "Campus Life - Manobikash Guide Centre",
+  },
+  {
+    id: 10,
+    url: "https://scontent.fixb4-1.fna.fbcdn.net/v/t39.30808-6/482218466_1087986750012457_2011831892574517485_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=7DJUN6D-mnkQ7kNvwGjhFa7&_nc_oc=Adkl3UdL_DBQU1co2noWi7bZuaKtyg3HiHF8B-BYREOlOeTcj5zV_zk7tp2HfhUa-OY&_nc_zt=23&_nc_ht=scontent.fixb4-1.fna&_nc_gid=903nPHiB9B8stzAh9w0dCw&oh=00_AfiQ3UKErdDHp_hdoP5RG24EOA3WXiNQ4TEK-A3Nn9YPxQ&oe=69312276",
+    alt: "Special Events - Manobikash Guide Centre",
   },
 ];
 
@@ -72,17 +68,10 @@ export default function GallerySection() {
   const [open, setOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<"photos" | "videos">("photos");
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
-  const [playingVideoId, setPlayingVideoId] = useState<string | null>(null);
   const [carouselIndex, setCarouselIndex] = useState<number>(0);
-  const [videoTitles, setVideoTitles] = useState<{ [key: string]: string }>({});
-
-  const handleVideoClick = (youtubeId: string) => {
-    setPlayingVideoId(youtubeId);
-  };
 
   const handleClose = () => {
     setOpen(false);
-    setPlayingVideoId(null);
     setTimeout(() => {
       setSelectedImage(null);
     }, 200);
@@ -106,30 +95,6 @@ export default function GallerySection() {
     setSelectedImage(galleryImages[newIndex].url);
   }, [currentImageIndex]);
 
-  // Fetch YouTube video titles
-  React.useEffect(() => {
-    const fetchVideoTitles = async () => {
-      const titles: { [key: string]: string } = {};
-
-      for (const video of galleryVideos) {
-        try {
-          // Use oEmbed API to fetch video title
-          const response = await fetch(
-            `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${video.youtubeId}&format=json`
-          );
-          const data = await response.json();
-          titles[video.youtubeId] = data.title;
-        } catch (error) {
-          console.error(`Failed to fetch title for ${video.youtubeId}:`, error);
-          titles[video.youtubeId] = "Untitled Video";
-        }
-      }
-
-      setVideoTitles(titles);
-    };
-
-    fetchVideoTitles();
-  }, []);
 
   // Auto-swipe carousel for photos
   React.useEffect(() => {
@@ -338,98 +303,16 @@ export default function GallerySection() {
 
         {/* Videos Grid */}
         {activeTab === "videos" && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            {galleryVideos.map((video, index) => (
-              <div
-                key={video.id}
-                className="group relative overflow-hidden rounded-sm shadow-sm hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-primary/20 via-blue-500/10 to-cyan-500/20"
-                style={{
-                  animationDelay: `${index * 100}ms`,
-                }}
-              >
-                <div className="relative">
-                  {/* Video Thumbnail or Player */}
-                  {playingVideoId === video.youtubeId ? (
-                    <div className="aspect-video">
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&rel=0&modestbranding=1`}
-                        title={videoTitles[video.youtubeId] || "YouTube Video"}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                        className="rounded-t-3xl w-full h-full"
-                      ></iframe>
-                    </div>
-                  ) : (
-                    <div
-                      className="cursor-pointer relative aspect-video"
-                      onClick={() => handleVideoClick(video.youtubeId)}
-                    >
-                      <Image
-                        src={video.thumbnail}
-                        alt={videoTitles[video.youtubeId] || "YouTube Video"}
-                        fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        className="object-cover rounded-t-3xl"
-                      />
-                      {/* Gradient Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/30 via-blue-500/20 to-transparent group-hover:from-cyan-400/40 transition-all duration-300" />
-
-                      {/* Play Button */}
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="bg-white rounded-full p-4 group-hover:scale-110 transition-transform duration-300 shadow-2xl">
-                          <Play className="w-6 h-6 text-primary fill-primary" />
-                        </div>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Video Info Section - Always Visible */}
-                  {videoTitles[video.youtubeId] && (
-                    <div className="p-4 md:p-5 bg-gradient-to-br from-white/50 to-white/30 backdrop-blur-sm rounded-b-3xl">
-                      <h4 className="text-foreground text-sm md:text-base font-bold mb-2 line-clamp-2">
-                        {videoTitles[video.youtubeId]}
-                      </h4>
-                      <div className="flex items-center gap-3 text-muted-foreground text-xs md:text-sm">
-                        <div className="flex items-center gap-1.5">
-                          <svg
-                            className="w-4 h-4"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
-                            />
-                          </svg>
-                          <span className="font-medium">Practice Session</span>
-                        </div>
-                        <div className="flex items-center gap-1.5">
-                          <svg
-                            className="w-4 h-4"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                          <span className="font-medium">18:45</span>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
+          <div className="flex flex-col items-center justify-center py-20">
+            <div className="text-center space-y-4">
+              <div className="mx-auto w-24 h-24 rounded-full bg-muted flex items-center justify-center">
+                <Play className="w-12 h-12 text-muted-foreground" />
               </div>
-            ))}
+              <h3 className="text-2xl font-bold text-foreground">No Videos Available</h3>
+              <p className="text-muted-foreground max-w-md">
+                We&apos;re working on bringing you exciting video content soon. Stay tuned!
+              </p>
+            </div>
           </div>
         )}
       </div>

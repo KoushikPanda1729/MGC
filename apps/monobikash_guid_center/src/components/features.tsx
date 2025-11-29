@@ -3,58 +3,53 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { cn } from "@/lib/utils";
-import {
-  Users,
-  ClipboardCheck,
-  PlayCircle,
-  MessageCircle,
-} from "lucide-react";
+import { Users, ClipboardCheck, PlayCircle, MessageCircle } from "lucide-react";
 import { brico } from "./fonts";
 
 const features = [
   {
     step: "Step 1",
-    title: "Personal Trainer (One on One)",
+    title: "One-to-One Tuition",
     content:
-      "Individual classes focused on your personal goals with fast improvement.",
+      "Personalised offline tuition focused on academic improvement, spoken English, and concept clarity.",
     icon: <Users className="h-6 w-6 text-primary" />,
-    thumbnail: "https://img.youtube.com/vi/sju21iJBuyE/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=sju21iJBuyE",
+    thumbnail: "https://scontent.fccu9-5.fna.fbcdn.net/v/t39.30808-6/571304498_1279587320852398_1056823564323495737_n.jpg?stp=c256.0.1536.1536a_cp6_dst-jpg_s552x414_tt6&_nc_cat=107&ccb=1-7&_nc_sid=50ad20&_nc_ohc=F2zIJFWXDyAQ7kNvwEDLb9S&_nc_oc=Adn39sxdKkdlvRV4yvBWBYlXqAscLn8Ky_MSfTB3X6cl3wzJUM-B3pk4Aa2NdzZ9BUG3HTgBRZHCQTg5sFewErAz&_nc_zt=23&_nc_ht=scontent.fccu9-5.fna&_nc_gid=VTWfwuUOnMYcGNug3QxpFg&oh=00_AfhIUHMHbJfBIElBhVncy6BtdPff0fBmqwAyKErVm8WYJQ&oe=69308AE5",
+    videoUrl: "#",
   },
   {
     step: "Step 2",
-    title: "Group Trainer",
+    title: "Small Batch Coaching",
     content:
-      "Classes of 15 students focused on similar goals with steady, gradual improvement.",
+      "Offline group classes designed for interactive learning, doubt clearing, and steady improvement.",
     icon: <Users className="h-6 w-6 text-primary" />,
-    thumbnail: "https://img.youtube.com/vi/RspV9xg1T44/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=RspV9xg1T44",
+    thumbnail: "https://scontent.fccu9-2.fna.fbcdn.net/v/t39.30808-6/518153886_1186641350146996_7675214779226681273_n.jpg?stp=c448.0.1152.1152a_cp6_dst-jpg_s552x414_tt6&_nc_cat=106&ccb=1-7&_nc_sid=50ad20&_nc_ohc=Vps3KlEh8uUQ7kNvwFjvkGS&_nc_oc=Adl3YELwzMIHILLXXJX-mP_ZVsp8C5Z2Ar_DbtRe5eUXblJDezH46JvsE1MdGa0UCn0anYH6LNinL0KjaeQiunSp&_nc_zt=23&_nc_ht=scontent.fccu9-2.fna&_nc_gid=KxMJ0pTULfZmB9xbmgXxfQ&oh=00_AfghH3GYMURlygcxirlj5xfRg0BhQKx662oziiy8gIb7Ag&oe=6930651F",
+    videoUrl: "#",
   },
   {
     step: "Step 3",
-    title: "Recorded Lessons",
+    title: "Activity & Practice Sessions",
     content:
-      "Access recorded lessons anytime, anywhere. Learn at your own pace with offline availability.",
+      "Regular classroom-based activities, spoken English practice, and worksheets for concept reinforcement.",
     icon: <PlayCircle className="h-6 w-6 text-primary" />,
-    thumbnail: "https://img.youtube.com/vi/y9K4QxX83sI/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=y9K4QxX83sI",
+    thumbnail: "https://scontent.fccu9-3.fna.fbcdn.net/v/t39.30808-6/518313760_1185755766902221_597611069112097202_n.jpg?stp=c144.0.864.864a_dst-jpg_s552x414_tt6&_nc_cat=111&ccb=1-7&_nc_sid=50ad20&_nc_ohc=63EBYqLqF4EQ7kNvwEulBlb&_nc_oc=AdnGVl5qiaUqutQmaZGVEO2JGJ_WMS5X2VKknbYK-eNSPpCZX1uUnNpPIMg6DCYZWI7bdoE9Jso6MfLqUhpD9337&_nc_zt=23&_nc_ht=scontent.fccu9-3.fna&_nc_gid=SfBjrmay7DRyJv-yLgMOeQ&oh=00_Afj59nR_Im9P5LBQ_f5Kcko2ojnj3Pox-fInlVy_3iwNcw&oe=693080CF",
+    videoUrl: "#",
   },
   {
     step: "Step 4",
-    title: "Offline Learning",
+    title: "Weekly Tests & Evaluation",
     content:
-      "Download lessons and practice without internet connection. Learn on the go, anytime.",
+      "Offline weekly tests to assess progress, improve accuracy, and strengthen learning ability.",
     icon: <ClipboardCheck className="h-6 w-6 text-primary" />,
-    thumbnail: "https://youngguruacademy.com/wp-content/uploads/2023/10/App-Banner-Design-1-2.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=Fixrdd0O6GI",
+    thumbnail: "https://scontent.fccu9-5.fna.fbcdn.net/v/t39.30808-6/492074040_1122924569852008_4623805019664803626_n.jpg?stp=c352.0.576.576a_dst-jpg_s552x414_tt6&_nc_cat=107&ccb=1-7&_nc_sid=50ad20&_nc_ohc=xYQrPIfTJuIQ7kNvwGLFmld&_nc_oc=AdkJY1EX-o44yH4Q-dI3XIEQZSfDRTmJZO17VskRE7RadWRd0j16a-qH5Eq3EE20DovcCF1TnOau33msPAtCKzd6&_nc_zt=23&_nc_ht=scontent.fccu9-5.fna&_nc_gid=tOtECw2iT8ljPEA7WPX-BA&oh=00_AfgzO6N1uZ2vn2TIseo4I0JU5A93OPERRCAtxphQPbkFgw&oe=69308459",
+    videoUrl: "#",
   },
   {
     step: "Step 5",
-    title: "Live Chat Support",
+    title: "Personal Guidance & Support",
     content:
-      "Get instant help from our support team. Chat with experts in real-time to answer your questions.",
+      "Continuous support from experienced teachers to guide students academically and personally.",
     icon: <MessageCircle className="h-6 w-6 text-primary" />,
-    thumbnail: "/images/live_chat.png",
+    thumbnail: "https://scontent.fccu9-3.fna.fbcdn.net/v/t39.30808-6/492382897_1122925766518555_6894931983649129643_n.jpg?stp=c144.0.864.864a_dst-jpg_s552x414_tt6&_nc_cat=110&ccb=1-7&_nc_sid=50ad20&_nc_ohc=z13kwFV_uKsQ7kNvwFzHxSV&_nc_oc=AdkAIc4j-2zUtpgewed0IH-B9jDxQyldTNxYTKs6qYRH3vmurBHaWdkgAEn2QTnKGuiaaMscKGOo-I6q_y8z6odd&_nc_zt=23&_nc_ht=scontent.fccu9-3.fna&_nc_gid=tOtECw2iT8ljPEA7WPX-BA&oh=00_AfgNcbEQD_eMHtYHmZHS2BMLXjtR6PSEga_56J_WWG9n-Q&oe=69306A56",
     videoUrl: "#",
   },
 ];
@@ -93,11 +88,10 @@ export default function FeatureSections() {
               brico.className
             )}
           >
-            Practice{" "}
-            <span className="bg-primary from-foreground via-rose-300 to-primary bg-clip-text text-transparent dark:bg-gradient-to-b">
-              English
-            </span>{" "}
-            with Confidence
+            Learning that{" "}
+            <span className="bg-primary bg-clip-text text-transparent">
+              Builds Confidence
+            </span>
           </motion.h2>
 
           <motion.p
@@ -106,14 +100,15 @@ export default function FeatureSections() {
             transition={{ duration: 1, delay: 0.5 }}
             className="mt-4 text-muted-foreground text-lg"
           >
-            Bunni Education Service Pvt Ltd guides you step by step to become a fluent
-            English speaker with expert guidance and flexible learning options.
+            At Manobikash Guide Centre, we focus entirely on offline classroom
+            learning with personalised support to help students grow
+            academically and personally.
           </motion.p>
         </div>
 
         {/* Feature Grid */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          {/* Mobile View - only current feature visible */}
+          {/* Mobile View */}
           <div className="block md:hidden space-y-8">
             <AnimatePresence mode="wait">
               <motion.div
@@ -124,7 +119,7 @@ export default function FeatureSections() {
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ duration: 0.5 }}
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 md:h-14 md:w-14 border-primary bg-primary/10 text-primary [box-shadow:0_0_15px_rgba(0,102,255,0.3)] scale-110">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 md:h-14 md:w-14 border-primary bg-primary/10 text-primary scale-110 shadow-md">
                   {features[currentFeature].icon}
                 </div>
                 <div>
@@ -139,7 +134,7 @@ export default function FeatureSections() {
             </AnimatePresence>
           </div>
 
-          {/* Desktop View - all features visible with highlight */}
+          {/* Desktop View */}
           <div className="hidden md:block space-y-8">
             {features.map((feature, index) => (
               <motion.div
@@ -157,7 +152,7 @@ export default function FeatureSections() {
                   className={cn(
                     "flex h-12 w-12 items-center justify-center rounded-full border-2 md:h-14 md:w-14",
                     index === currentFeature
-                      ? "scale-110 border-primary bg-primary/10 text-primary [box-shadow:0_0_15px_rgba(0,102,255,0.3)]"
+                      ? "scale-110 border-primary bg-primary/10 text-primary shadow-md"
                       : "border-muted-foreground bg-muted"
                   )}
                 >
@@ -175,26 +170,23 @@ export default function FeatureSections() {
             ))}
           </div>
 
-          {/* Right Side - Video Thumbnail Carousel */}
+          {/* Right Side – Placeholder Image */}
           <div className="relative w-full flex justify-center">
             <div className="w-full max-w-2xl">
               <AnimatePresence mode="wait">
                 <motion.a
-                  key={features[currentFeature].videoUrl}
-                  href={features[currentFeature].videoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative block w-full aspect-video rounded-xl overflow-hidden shadow-2xl group cursor-pointer"
+                  key={features[currentFeature].thumbnail}
+                  href="#"
+                  className="relative block w-full aspect-video rounded-xl overflow-hidden shadow-2xl group"
                   initial={{ y: 100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -100, opacity: 0 }}
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={features[currentFeature].thumbnail}
                     alt={features[currentFeature].title}
-                    className="absolute inset-0 w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </motion.a>
               </AnimatePresence>

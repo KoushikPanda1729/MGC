@@ -10,52 +10,59 @@ import {
 } from "@t2p-admin/ui/components/avatar";
 import { motion } from "motion/react";
 import { brico } from "./fonts";
+import Image from "next/image";
 
 const videoTestimonials = [
   {
-    url: "https://youtu.be/n1lB9OkAuqc",
-    embedId: "n1lB9OkAuqc",
-    speaker: "Jaloti Hembram",
+    url: "https://youtu.be/ScMzIvxBSi4",
+    embedId: "ScMzIvxBSi4",
+    speaker: "Sourav Mondal",
     avatar: "",
-    location: "Jharkhand, India",
-    badge: "Top Student",
-    title: "What Jaloti Hembram Says About Young Guru Academy",
-    category: "Success Story",
-    duration: "5 min watch",
-    testimonial:
-      "Young Guru Academy completely transformed my English speaking skills! The one-on-one sessions with expert trainers helped me overcome my hesitation and speak with confidence. I've seen remarkable...",
-    rating: 5,
-    timeAgo: "3 months ago",
-  },
-  {
-    url: "https://youtu.be/M3UyhlJbK24",
-    embedId: "M3UyhlJbK24",
-    speaker: "Dimbeshwar Cho",
-    avatar: "",
-    location: "Assam, India",
-    badge: "Top Student",
-    title: "What Dimbeshwar Cho Says About Young Guru Academy",
-    category: "Success Story",
+    thumbnail:
+      "https://scontent.fccu9-4.fna.fbcdn.net/v/t39.30808-6/488683303_1112383454239453_155557094319131258_n.jpg?stp=c0.99.600.600a_dst-jpg_s552x414_tt6&_nc_cat=101&ccb=1-7&_nc_sid=50ad20&_nc_ohc=tnQnq7Dv65AQ7kNvwFE1UQs&_nc_oc=Adk-5NRLMnWrou-fWZO9TX3AqG4P6R1hTeq-rsQpqSROySQaWiPGoYT7hn4du-oeFhzwIEZW3Nh9hghWV1KuGpAF&_nc_zt=23&_nc_ht=scontent.fccu9-4.fna&_nc_gid=hiMPGlk04-xCD0Y_CPP2Tw&oh=00_AfhiGWEUlDMhbJA6zQksXOOhgDHgG-9JzrfxQkZ12AMcng&oe=69307EB7",
+    location: "Midnapore, India",
+    badge: "Top Performer",
+    title: "How Manobikash Guide Centre Helped Sourav Improve",
+    category: "Student Testimonial",
     duration: "4 min watch",
     testimonial:
-      "The personalized attention and structured approach at Young Guru Academy helped me gain fluency in English. The trainers are patient and understanding, making every session valuable...",
+      "Manobikash Guide Centre helped me build a strong foundation in my studies. The teachers explain concepts very clearly, and I gained a lot of confidence after joining...",
+    rating: 5,
+    timeAgo: "1 month ago",
+  },
+  {
+    url: "https://youtu.be/lX44CAz-JhU",
+    embedId: "lX44CAz-JhU",
+    speaker: "Ankita Paria",
+    avatar: "",
+    thumbnail:
+      "https://scontent.fccu9-3.fna.fbcdn.net/v/t39.30808-6/488864987_1112380237573108_8703327777285704006_n.jpg?stp=c0.99.600.600a_dst-jpg_s552x414_tt6&_nc_cat=109&ccb=1-7&_nc_sid=50ad20&_nc_ohc=d2StxOcvPqwQ7kNvwE9DWSY&_nc_oc=Adm--aBgksp6fIQCeRR25kzPe2lPAyFylftOkLuefj35xx73Ew-MCBO8ar1DtsvEdobjK0VvRBE46CUwRy4dw1fj&_nc_zt=23&_nc_ht=scontent.fccu9-3.fna&_nc_gid=qjzp5VWpEnJCz8BjVnqU2w&oh=00_Afg2F-1nbSFOMQjPjqw-SvMZrUJd73RJjc3puNMnN0nDaw&oe=69307D53",
+    location: "Kharagpur, India",
+    badge: "Star Student",
+    title: "Ankita Shares Her Experience at Manobikash Guide Centre",
+    category: "Student Journey",
+    duration: "3 min watch",
+    testimonial:
+      "Thanks to the guidance and support at Manobikash Guide Centre, I improved my academic performance significantly. The environment is supportive and motivating...",
     rating: 5,
     timeAgo: "2 months ago",
   },
   {
-    url: "https://youtu.be/ZLwAnwVL7G0",
-    embedId: "ZLwAnwVL7G0",
-    speaker: "Krishna Nichal",
+    url: "https://youtu.be/tAGnKpE4NCI",
+    embedId: "tAGnKpE4NCI",
+    speaker: "Ritam Ghosh",
     avatar: "",
-    location: "Delhi, India",
-    badge: "Top Student",
-    title: "What Krishna Nichal Says About Young Guru Academy",
+    thumbnail:
+      "https://scontent.fccu9-5.fna.fbcdn.net/v/t39.30808-6/488778978_1112380174239781_7808486960970416461_n.jpg?stp=c0.99.600.600a_dst-jpg_s552x414_tt6&_nc_cat=107&ccb=1-7&_nc_sid=50ad20&_nc_ohc=V7GecTg8qMwQ7kNvwHhRQC0&_nc_oc=AdnCfYmXAkrDvZiQbHUIn89kmXu6TAsX7LkumnPWEu3IELiZGsmQ1faF2j7yDCkhBYa6s02oplMsm0hyVTYeN1ZN&_nc_zt=23&_nc_ht=scontent.fccu9-5.fna&_nc_gid=hiMPGlk04-xCD0Y_CPP2Tw&oh=00_AfiHsXj-l9-SkV1Tef1gG8ACunHL1QoB1lcXHM6MhQ_vIQ&oe=693081C1",
+    location: "Medinipur, India",
+    badge: "Achiever",
+    title: "Ritam Talks About His Growth at Manobikash Guide Centre",
     category: "Success Story",
-    duration: "6 min watch",
+    duration: "5 min watch",
     testimonial:
-      "Young Guru Academy's approach to teaching English is unique and effective. The practice sessions and feedback have boosted my confidence tremendously...",
+      "The personalized attention at Manobikash Guide Centre made a huge difference for me. I improved in subjects I once found difficult. Highly recommended...",
     rating: 5,
-    timeAgo: "4 months ago",
+    timeAgo: "3 months ago",
   },
 ];
 
@@ -117,9 +124,9 @@ export default function TestimonialSection() {
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            Real feedback from users who&apos;ve grown confident in English
-            speaking through Talk2Partner&apos;s expert sessions and group
-            practice.
+            Real feedback from students who have improved their skills and
+            confidence through Manobikash Guide Centre’s dedicated guidance and
+            supportive learning environment.
           </motion.p>
         </motion.div>
 
@@ -139,17 +146,34 @@ export default function TestimonialSection() {
                   className="w-[75vw] sm:w-[360px] md:w-[400px] lg:w-[460px] overflow-hidden rounded-3xl  shadow-sm"
                 >
                   {/* Video Section */}
-                  <div className="relative aspect-video w-full overflow-hidden">
-                    {/* Top Student Badge */}
-
-                    {/* Video Iframe */}
-                    <iframe
-                      src={`https://www.youtube.com/embed/${video.embedId}`}
-                      title={`${video.speaker} testimonial`}
-                      className="w-full h-full"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                    />
+                  <div className="relative aspect-square w-full overflow-hidden">
+                    {/* Video Thumbnail */}
+                    <a
+                      href={video.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block relative w-full h-full group"
+                    >
+                      <Image
+                        src={video.thumbnail}
+                        alt={`${video.speaker} testimonial thumbnail`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 75vw, (max-width: 768px) 360px, (max-width: 1024px) 400px, 460px"
+                      />
+                      {/* Play button overlay */}
+                      <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+                        <div className="bg-red-600 rounded-full p-4 md:p-5 group-hover:scale-110 transition-transform">
+                          <svg
+                            className="w-8 h-8 md:w-12 md:h-12 text-white"
+                            fill="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path d="M8 5v14l11-7z" />
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
                   </div>
 
                   {/* Content Section */}

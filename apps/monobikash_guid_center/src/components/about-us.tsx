@@ -12,18 +12,18 @@ export default function AboutUsSection() {
   const aboutData = {
     title: "About Us",
     subtitle:
-      "Bunni Education Service Pvt Ltd is an online and offline Institute for Learning English Spoken, Personality Development, Interview Preparation, Career Counselling, and other Career and Educational skills in west Vinod nagar, Delhi. Bunni Education Service Pvt Ltd has been Teaching since 2015 & Trained more than 50K Students Across the Country. We have developed an environment where you must Learn English & Improve Yourself. We provide spoken classes from Zero to intermediate or advanced level to nurture the students from the level they want to pursue. So Join Now Our Course to fulfill your Dreams.",
+      "Manobikash Guide Centre is a trusted academic and skill-development institute based in Medinipur, West Bengal. Since 2018, we have been dedicated to providing quality education, including school tuition, spoken English training, personality development, career counselling, and exam preparation. With experienced teachers and a supportive learning environment, we have helped thousands of students build strong foundations and achieve academic and personal growth.",
     mission:
-      "To provide accessible, high-quality skill development courses that empower students, professionals, and homemakers to achieve their personal and career goals through expert guidance and flexible learning options.",
+      "To offer accessible, structured, and high-quality learning support that helps students strengthen their academics, improve communication skills, and develop essential abilities for future success. Our mission is to guide learners of all levels with personalized attention, modern teaching methods, and a positive learning atmosphere.",
     vision:
-      "To Deliver the  PRODUCTIVE EDUCATION to Every Home of INDIA at the LOWEST COST with the help of TECHNOLOGY .",
+      "To become a leading educational hub in Medinipur by providing reliable, affordable, and impactful learning opportunities that empower every student to reach their highest potential and build a successful future.",
   };
 
   const stats = [
     {
       icon: <Users className="h-6 w-6 text-primary" />,
       label: "Students",
-      value: 50000,
+      value: 10000,
       title: "Successfully Taught Students",
       delay: 0.1,
       decimalPlaces: 0,
@@ -118,31 +118,38 @@ export default function AboutUsSection() {
                 Our Mission
               </h3>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                To provide{" "}
+                At{" "}
                 <strong className="text-foreground font-semibold">
-                  Spoken English training
+                  Manobikash Guide Centre
                 </strong>
-                ,{" "}
+                , our mission is to provide
                 <strong className="text-foreground font-semibold">
-                  Soft Skills development
+                  {" "}
+                  quality academic support
                 </strong>
-                ,{" "}
+                ,
                 <strong className="text-foreground font-semibold">
-                  Interview Preparation
+                  {" "}
+                  spoken English training
                 </strong>
-                ,{" "}
+                ,
                 <strong className="text-foreground font-semibold">
-                  Career Counselling , Seminars, Webinars
+                  {" "}
+                  personality development
                 </strong>
-                , and other learning programs through{" "}
+                , and
                 <strong className="text-foreground font-semibold">
-                  innovative technology
-                </strong>{" "}
-                — helping{" "}
+                  {" "}
+                  career-guidance programs
+                </strong>
+                . We aim to help students of all levels build strong
+                fundamentals, gain confidence, and excel in both studies and
+                life through
                 <strong className="text-foreground font-semibold">
-                  students, job seekers, professionals, and corporate teams{" "}
-                </strong>{" "}
-                improve their communication, confidence, and career growth .
+                  {" "}
+                  consistent guidance and a supportive learning environment
+                </strong>
+                .
               </p>
             </motion.div>
 
@@ -164,24 +171,15 @@ export default function AboutUsSection() {
                 Our Vision
               </h3>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                To{" "}
+                Our vision is to create a learning ecosystem where every student
+                from Medinipur and surrounding areas can access
                 <strong className="text-foreground font-semibold">
-                  revolutionize learning in India
-                </strong>{" "}
-                by using{" "}
-                <strong className="text-foreground font-semibold">
-                  {" "}
-                  technology
-                </strong>{" "}
-                to deliver{" "}
-                <strong className="text-foreground font-semibold">
-                  practical, affordable, and skill-based education
-                </strong>{" "}
-                that reaches{" "}
-                <strong className="text-foreground font-semibold">
-                  every learner, everywhere
+                  affordable, reliable, and high-quality education
                 </strong>
-                .
+                . We aim to shape confident learners by using effective teaching
+                methods, skilled educators, and continuous motivation—
+                empowering each student to build a brighter and successful
+                future.
               </p>
             </motion.div>
           </motion.div>

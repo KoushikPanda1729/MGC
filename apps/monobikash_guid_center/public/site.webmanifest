@@ -1,7 +1,7 @@
 {
-  "name": "Bunni Education Service Pvt Ltd",
-  "short_name": "Bunni Education",
-  "description": "Transform your skills with flexible online courses. Offering personal and group batches for students, professionals, and homemakers.",
+  "name": "Manobikash Guide Centre",
+  "short_name": "Manobikash",
+  "description": "An offline learning centre offering school tuition, spoken English training, skill development, and personal guidance for students in Medinipur.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
