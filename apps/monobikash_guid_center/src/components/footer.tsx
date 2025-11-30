@@ -12,10 +12,10 @@ import { IoMdMail } from "react-icons/io";
 import Link from "next/link";
 import Logo from "./logo";
 const data = {
-  facebookLink: "https://www.facebook.com/monobikashguidecentre",
-  instaLink: "#", // Add real link if available
-  youtubeLink: "https://www.youtube.com", // Replace with actual channel if needed
-  linkedinLink: "#",
+  facebookLink: "https://www.facebook.com/profile.php?id=100064034260334",
+  instaLink: "https://www.facebook.com/profile.php?id=100064034260334", // Add real link if available
+  youtubeLink: "https://www.facebook.com/profile.php?id=100064034260334", // Replace with actual channel if needed
+  linkedinLink: "https://www.facebook.com/profile.php?id=100064034260334",
 
   quickLinks: {
     home: "#home",

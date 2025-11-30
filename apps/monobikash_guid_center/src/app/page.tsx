@@ -7,6 +7,7 @@ import TestimonalSection from "@/components/testimonal";
 import { siteConfig } from "@/config/seo";
 import TeamSection from "../components/team";
 import FeatureSections from "../components/features";
+import OurBrandsSection from "../components/our-brands";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -32,6 +33,7 @@ export default function Home() {
     <div>
       <HeroSection />
       <FeatureSections />
+      <OurBrandsSection />
       <CourseSections />
       <TestimonalSection />
       <AboutUsSection />

@@ -21,12 +21,12 @@ export default function Navbar() {
   const navLinks = useMemo(
     () => [
       { href: "#home", label: "Home" },
-      // { href: "#our-brands", label: "Our Brands" },
+      { href: "#our-brands", label: "Our Brands" },
       { href: "#testimonial", label: "Testimonials" },
       { href: "/gallery", label: "Gallery" },
       { href: "#about", label: "About" },
       { href: "#faqs", label: "FAQs" },
-      { href: "/careers", label: "Careers" },
+      // { href: "/careers", label: "Careers" },
     ],
     []
   );
