@@ -7,11 +7,21 @@ export function OrganizationStructuredData() {
     name: siteConfig.name,
     description: siteConfig.description,
     url: siteConfig.url,
-    logo: `${siteConfig.url}/images/logo.png`,
+    logo: `${siteConfig.url}/images/center_logo.jpeg`,
     contactPoint: {
       "@type": "ContactPoint",
+      telephone: "+91 9735836582",
       contactType: "Customer Service",
-      availableLanguage: ["English"],
+      email: "dash.jyotirmoy1987@gmail.com",
+      areaServed: "IN",
+      availableLanguage: ["English", "Bengali"],
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Patna Bazar, Jugnitala Main Road",
+      addressLocality: "Medinipur",
+      addressRegion: "West Bengal",
+      addressCountry: "IN",
     },
     sameAs: [
       siteConfig.links.twitter,
@@ -59,11 +69,39 @@ export function EducationalOrganizationStructuredData() {
     name: siteConfig.name,
     description: siteConfig.description,
     url: siteConfig.url,
-    applicationCategory: "EducationalApplication",
-    operatingSystem: "Android, iOS",
-    offers: {
-      "@type": "Offer",
-      category: "Language Learning",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Patna Bazar, Jugnitala Main Road",
+      addressLocality: "Medinipur",
+      addressRegion: "West Bengal",
+      addressCountry: "IN",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "22.4257", // Approximate latitude for Medinipur
+      longitude: "87.3199", // Approximate longitude for Medinipur
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Educational Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Course",
+            name: "School Tuition (Class 5-12)",
+            description: "Comprehensive tuition for WBBSE and WBCHSE boards.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Course",
+            name: "Spoken English",
+            description: "Fluency and communication skills training.",
+          },
+        },
+      ],
     },
   };
 

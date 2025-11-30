@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function FloatingWhatsApp() {
-  const whatsappNumber = "+91 73192 41940";
+  const whatsappNumber = "+91 9735836582";
   const whatsappLink = `https://wa.me/${whatsappNumber.replace(/\D/g, "")}`;
 
   return (

@@ -20,6 +20,10 @@ export const siteConfig = {
     "english speaking course",
     "student improvement",
     "education centre medinipur",
+    "WBBSE",
+    "WBCHSE",
+    "West Bengal",
+    "Medinipur tuition",
   ],
 };
 

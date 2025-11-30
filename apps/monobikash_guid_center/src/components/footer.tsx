@@ -34,9 +34,9 @@ const data = {
 
   contact: {
     address: "Patna Bazar, Jugnitala Main Road, Medinipur, West Bengal",
-    phone: "+91 9000000000",
-    email: "info@manobikash.in",
-    whatsapp: "+91 90000 00000",
+    phone: "+91 9735836582",
+    email: "dash.jyotirmoy1987@gmail.com",
+    whatsapp: "+91 9735836582",
   },
 
   company: {

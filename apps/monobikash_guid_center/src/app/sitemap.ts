@@ -4,6 +4,8 @@ import { siteConfig } from "@/config/seo";
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
+    "/careers",
+    "/gallery",
     "/policies/privacy-policy",
     "/policies/terms-of-service",
   ].map((route) => ({
