@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Home",
   description: siteConfig.description,
   openGraph: {
-    title: `${siteConfig.name} - Improve Your English Fluency`,
+    title: `${siteConfig.name}`,
     description: siteConfig.description,
     type: "website",
     url: siteConfig.url,
