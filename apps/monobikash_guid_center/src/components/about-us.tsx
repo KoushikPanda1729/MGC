@@ -12,7 +12,7 @@ export default function AboutUsSection() {
   const aboutData = {
     title: "About Us",
     subtitle:
-      "Manobikash Guide Centre is a trusted academic and skill-development institute based in Medinipur, West Bengal. Since 2015, we have been dedicated to providing quality education, including school tuition, spoken English training, personality development, career counselling, and exam preparation. With experienced teachers and a supportive learning environment, we have helped thousands of students build strong foundations and achieve academic and personal growth.",
+      "Manobikash Guide Centre is a trusted academic and skill-development institute based in Medinipur, West Bengal. Since 2014, we have been dedicated to providing quality education, including school tuition, spoken English training, personality development, career counselling, and exam preparation. With experienced teachers and a supportive learning environment, we have helped thousands of students build strong foundations and achieve academic and personal growth.",
     mission:
       "To offer accessible, structured, and high-quality learning support that helps students strengthen their academics, improve communication skills, and develop essential abilities for future success. Our mission is to guide learners of all levels with personalized attention, modern teaching methods, and a positive learning atmosphere.",
     vision:

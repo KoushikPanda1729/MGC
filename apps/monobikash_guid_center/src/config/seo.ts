@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "Manobikash Guide Centre",
   description:
-    "Leading educational institution in Medinipur since 2015. Expert coaching for WBBSE, WBCHSE, spoken English, skill development, and career guidance. Best tuition centre in Medinipur, West Bengal for academic excellence and personality development.",
+    "Leading educational institution in Medinipur since 2014. Expert coaching for WBBSE, WBCHSE, spoken English, skill development, and career guidance. Best tuition centre in Medinipur, West Bengal for academic excellence and personality development.",
   url: "https://mgc-three.vercel.app",
   ogImage: "/images/center_logo.jpeg",
   links: {
@@ -172,7 +172,7 @@ export const structuredData = {
         "@type": "City",
         name: "Medinipur",
       },
-      foundingDate: "2015",
+      foundingDate: "2014",
       knowsAbout: [
         "School Education",
         "Spoken English",

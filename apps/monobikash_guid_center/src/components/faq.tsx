@@ -32,7 +32,7 @@ const defaultFaqs = [
     id: "faq-1",
     question: "What is Manobikash Guide Centre?",
     answer:
-      "Manobikash GUIDE Centre, established in <strong class='text-foreground font-bold'>2015</strong>, is a trusted educational institute in Medinipur offering school tuition, spoken English training, skill development classes, and career guidance for students of all levels.",
+      "Manobikash GUIDE Centre, established in <strong class='text-foreground font-bold'>2014</strong>, is a trusted educational institute in Medinipur offering school tuition, spoken English training, skill development classes, and career guidance for students of all levels.",
   },
   {
     id: "faq-2",

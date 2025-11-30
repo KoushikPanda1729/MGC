@@ -105,7 +105,7 @@ export default function HeroSection() {
                 Manobikash GUIDE Centre
               </strong>{" "}
               established in{" "}
-              <strong className="text-primary font-bold">2015</strong>, is a
+              <strong className="text-primary font-bold">2014</strong>, is a
               trusted academic and skill-development institute in Medinipur. We
               provide comprehensive{" "}
               <strong className="text-foreground font-semibold">
@@ -261,7 +261,7 @@ export default function HeroSection() {
                   transition={{ delay: 1, duration: 0.6 }}
                 >
                   <div className="text-center">
-                    <div className="text-3xl font-bold">2015</div>
+                    <div className="text-3xl font-bold">2014</div>
                     <div className="text-sm opacity-90">Est. Since</div>
                   </div>
                 </motion.div>
