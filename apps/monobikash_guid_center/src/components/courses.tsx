@@ -218,7 +218,7 @@ export default function CourseSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0"
+          className="max-w-7xl mx-auto flex md:grid overflow-x-auto md:overflow-x-visible md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0 snap-x snap-mandatory md:snap-none no-scrollbar"
         >
           {courses.map((course, index) => (
             <motion.div
@@ -226,7 +226,7 @@ export default function CourseSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex justify-center"
+              className="flex justify-center flex-shrink-0 w-[70vw] md:w-auto snap-center"
             >
               <Card className="overflow-hidden rounded-xl shadow-md border pt-0 w-full max-w-[400px] flex flex-col">
                 {/* Gradient Header */}
