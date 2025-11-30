@@ -157,14 +157,6 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              {/* <Button
-                asChild
-                variant="default"
-                size="lg"
-                className="rounded-full"
-              >
-                <Link href={"https://accounts.talk2partners.com"}>Login</Link>
-              </Button> */}
             </div>
 
             {/* Mobile Hamburger */}
@@ -198,16 +190,6 @@ export default function Navbar() {
                         {link.label}
                       </Link>
                     ))}
-                    {/* <Button
-                      asChild
-                      variant="default"
-                      size="lg"
-                      className="rounded-full w-full mt-6"
-                    >
-                      <Link href={"https://accounts.talk2partners.com"}>
-                        Login
-                      </Link>
-                    </Button> */}
                   </div>
                 </SheetContent>
               </Sheet>

@@ -20,6 +20,9 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { jobPostings } from "./job-data";
+import { motion } from "motion/react";
+import { cn } from "@t2p-admin/ui/lib/utils";
+import { brico } from "../../components/fonts";
 
 const benefits = [
   {
@@ -46,11 +49,24 @@ export default function CareersSection() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            Join Our Team
-          </h1>
+
+           <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className={cn(
+              "mb-6 bg-gradient-to-b from-foreground via-foreground/90 to-foreground/60 bg-clip-text text-4xl font-bold text-transparent sm:text-6xl",
+              brico.className
+            )}
+          >
+            Join Our {" "}
+            <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+             Team
+            </span>
+          </motion.h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Help us empower 50,000+ students and working professionals across
+            Help us empower 10,000+ students and working professionals across
             India with quality education. Be part of a mission that transforms
             lives.
           </p>
@@ -67,32 +83,7 @@ export default function CareersSection() {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-5 px-4 sm:px-6 lg:px-8 bg-secondary/20">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Join Us?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {benefits.map((benefit) => {
-              const Icon = benefit.icon;
-              return (
-                <Card key={benefit.title} className="text-center">
-                  <CardHeader>
-                    <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <CardTitle>{benefit.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-muted-foreground">
-                      {benefit.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+
 
       {/* Job Listings Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
