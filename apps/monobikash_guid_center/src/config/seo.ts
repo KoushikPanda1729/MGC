@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "Manobikash Guide Centre",
   description:
-    "A trusted learning centre in Medinipur offering school tuition, spoken English training, skill development, career guidance, and personal growth programs since 2018.",
+    "A trusted learning centre in Medinipur offering school tuition, spoken English training, skill development, career guidance, and personal growth programs since 2015.",
   url: "https://manobikashguidecentre.com",
   ogImage: "https://manobikashguidecentre.com/images/og-image.jpg",
   links: {
