@@ -114,263 +114,408 @@ function textToLexical(text: string): SerializedEditorState {
   } as SerializedEditorState;
 }
 
-const REFUND_POLICY_MD = `# 💸 Refund & Cancellation Policy
+const REFUND_POLICY_MD = `# Refund & Cancellation Policy
 
-**Effective Date:** 01 July 2025
-**Last Updated:** 01 July 2025
+**Effective Date:** January 1, 2025
+**Last Updated:** November 30, 2025
 
-At **Manobikash GUIDE Centre**, we value your trust and are committed to maintaining transparency, fairness, and clarity in all financial transactions. This Refund & Cancellation Policy applies to all academic programs, spoken English courses, and skill-development services offered by our centre.
+---
 
-## 1. General Policy
+## Overview
 
-• All course payments are considered final.
-• Once classes begin or learning materials are provided, refunds are limited as per policy.
-• By enrolling in a course, you agree to this Refund & Cancellation Policy.
+At Manobikash Guide Centre, we are committed to transparency and fairness in all our transactions. This policy outlines the terms and conditions for refunds and cancellations for our in-person educational services.
 
-## 2. Refund Eligibility Timeline
+---
 
-Refunds apply only to courses priced above **₹1500** and only if requested within **15 days of admission**.
+## Refund Eligibility
 
-### Refund Breakdown:
+### Timeline-Based Refunds
 
-• **0–3 days:** 60% refund
-• **4–7 days:** 50% refund
-• **8–15 days:** 25% refund
-• **After 15 days:** No refund
+Refunds are available **only for courses priced above ₹1,500** and must be requested within **15 days of enrollment**.
 
-### Important Notes:
+| Days Since Enrollment | Refund Percentage |
+|-----------------------|-------------------|
+| 0-3 days              | 60%              |
+| 4-7 days              | 50%              |
+| 8-15 days             | 25%              |
+| After 15 days         | No refund        |
 
-• GST & payment gateway charges are **non-refundable**.
-• Refund requests must be emailed to **info@manobikash.in** within the eligible period.
-• Refunds (when approved) are processed within **7–10 business days**.
+### Important Conditions
 
-## 3. Refunds May Also Be Considered If:
+- GST charges are **non-refundable**
+- Refund requests must be submitted in person at our center or via email to **dash.jyotirmoy1987@gmail.com**
+- Approved refunds are processed within **7-10 business days**
+- All course payments are considered final once classes begin
 
-• Payment was made but access/classes were not provided due to a technical issue.
-• Duplicate payment was made.
-• Payment was mistakenly sent to a wrong account/UPI ID (must be reported within **3 days** with evidence).
+---
 
-We will assist, but we are not responsible for incorrect transfers made by the payer.
+## Special Refund Cases
 
-## 4. Non-Refundable Situations
+Refunds may be considered in the following situations:
 
-Refunds will **not** be provided for:
+- Payment made but classes not provided due to unforeseen circumstances
+- Duplicate payment occurred
+- Payment error (must be reported within 3 days with proof)
 
-• Change of mind
-• Personal schedule issues
-• Not attending classes after enrollment
-• Course not meeting personal expectations
-• Slow academic improvement
-• Misuse or breach of student conduct
-• Fraudulent discount usage
-• Payments made during technical glitches or system testing
+**Note:** We will assist with resolution, but are not responsible for incorrect payments made by the student.
 
-## 5. Pricing Errors & Technical Glitches
+---
 
-If a course displays incorrect prices (₹0, ₹1, or unintended discounts) due to a system error:
+## Non-Refundable Situations
 
-• The enrolment may be cancelled
-• Access may be revoked
-• No refund or compensation will be issued
+Refunds will **NOT** be provided for:
 
-## 6. Cancellation Requests
+- Change of mind after enrollment
+- Personal schedule conflicts
+- Non-attendance after enrollment
+- Course not meeting personal expectations
+- Slow academic progress
+- Violation of student conduct policies
+- Fraudulent discount usage
 
-• If you cancel **before classes begin**, a refund may be possible as per timeline rules.
-• Once classes or materials are accessed, the refund structure in Section 2 applies.
+---
 
-## 7. Payment Methods Covered
+## Cancellation Policy
 
-This policy applies to:
+- Cancellations **before classes begin** may be eligible for refunds per the timeline above
+- Once classes start, the standard refund structure applies
+- Cancellation requests must be submitted in writing (in person or via email)
 
-• UPI / Bank Transfer
-• Razorpay
-• Website or offline payments
+---
 
-## 8. Contact for Refund Support
+## Payment Methods
 
-**Manobikash GUIDE Centre**
-📧 Email: info@manobikash.in
-📍 Address: Patna Bazar, Jugnitala Main Road, Medinipur, West Bengal
+This policy applies to all payment methods:
 
-## 📌 Final Note
+- Cash payments at the center
+- UPI / Bank Transfer
+- Online Payment (when available)
 
-Please review course details and schedules before enrolling.
-For any confusion, reach out to us — we’re here to help!
+---
 
-Thank you for choosing **Manobikash Guide Centre**.`;
+## Contact Us
 
-const TERMS_POLICY_MD = `# 📄 Terms of Service
+For refund inquiries or support:
 
-**Effective Date:** 01 July 2025
-**Last Updated:** 01 July 2025
+**Manobikash Guide Centre**
+📍 Patna Bazar, Jugnitala Main Road, Medinipur, West Bengal
+📧 dash.jyotirmoy1987@gmail.com
+📞 +91 9735836582
 
-These Terms govern the use of services provided by **Manobikash GUIDE Centre**, including academic classes, spoken English programs, online/offline learning, and related digital content.
+---
 
-By enrolling or accessing our services, you agree to these Terms.
+*Please review all course details and schedules carefully before enrolling. Visit our center or contact us if you have any questions.*`;
 
-## 1. Eligibility
+const TERMS_POLICY_MD = `# Terms of Service
 
-• Minimum age for enrolment: **13 years**
-• Students aged 13–18 must enroll under parental/guardian guidance
+**Effective Date:** January 1, 2025
+**Last Updated:** November 30, 2025
 
-## 2. Enrollment & Registration
+---
 
-• Students must provide accurate information during admission.
-• Attendance and discipline rules must be followed during classes.
-• Misconduct may result in removal without refund.
+## Agreement to Terms
 
-## 3. Services Offered
+By enrolling in classes at Manobikash Guide Centre, you agree to be bound by these Terms of Service. Please read them carefully.
 
-We provide access to:
+---
 
-• Academic tuition
-• Spoken English training
-• Personality development & soft skills
-• Career counselling
-• Online learning resources (videos, PDFs, tests if applicable)
+## Eligibility
 
-Services may be modified or updated without prior notice.
+- Minimum age for enrollment: **13 years**
+- Students aged 13-18 must enroll under parental or guardian supervision
+- Accurate information must be provided during registration
 
-## 4. Payments & Refunds
+---
 
-• Fees may be one-time or instalment-based.
-• Payment must be made through official channels only.
-• Refunds follow the **Refund & Cancellation Policy**.
+## Services Offered
 
-## 5. Direct/Manual Payments
+We provide the following in-person educational services:
 
-Payments made through UPI/bank transfer will be verified manually before granting access.
+- **Academic Tuition** - Classes 5-12 (WBBSE & WBCHSE)
+- **Spoken English Training** - All proficiency levels
+- **Skill Development Programs** - Personality development and soft skills
+- **Career Counseling** - Guidance and planning
+- **Study Materials** - Notes, worksheets, and practice tests
 
-## 6. Student Code of Conduct
+**Note:** Services and schedules may be modified to improve quality and accommodate student needs.
 
-Students must:
+---
 
-• Behave respectfully with teachers and peers
-• Attend classes regularly
-• Avoid misuse of study materials
-• Not engage in harassment, bullying, or disruptive behaviour
+## Payment Terms
 
-Violations may lead to suspension or termination **without refund**.
+- Fees may be one-time or installment-based
+- Payments can be made at the center in cash or via UPI/bank transfer
+- All refunds are subject to our Refund & Cancellation Policy
+- Payment confirmation is required before class attendance
 
-## 7. Learning Disclaimer
+### Payment Verification
 
-Educational outcomes vary by individual effort.
-We do not guarantee specific results, rankings, or performance outcomes.
+For UPI/bank transfers, please show payment confirmation at the center for verification.
 
-## 8. Intellectual Property
+---
 
-All study materials (videos, notes, PDFs, tests, etc.) belong to **Manobikash Guide Centre**.
-Unauthorized sharing or reproduction is strictly prohibited.
+## Student Code of Conduct
 
-## 9. Class Recording & Content Safety
+All students must:
 
-• Some sessions may restrict recording or screenshots to protect learning content.
-• No personal screen data is stored — restrictions protect our intellectual property.
+- Treat teachers and peers with respect
+- Attend classes regularly and punctually
+- Bring required books and materials to class
+- Not share or distribute study materials without permission
+- Avoid disruptive behavior, harassment, or bullying
+- Follow all center rules and guidelines
+- Maintain cleanliness in classrooms
 
-## 10. Account Termination
+**Violations may result in suspension or termination without refund.**
 
-We may suspend or terminate student access for policy violations.
-Students may request account deletion via email.
+---
 
-## 11. Limitation of Liability
+## Academic Disclaimer
 
-We are not responsible for:
+- Educational outcomes depend on individual effort and dedication
+- We do not guarantee specific results, rankings, or examination scores
+- Progress varies by student and is influenced by multiple factors including attendance and practice
 
-• Internet problems
-• Device issues
-• Delays caused by third-party platforms
-• External factors beyond our control
+---
 
-## 12. Children's Safety
+## Intellectual Property
 
-Students under 18 must use services under adult supervision.
+All study materials including notes, worksheets, tests, and other content provided by **Manobikash Guide Centre** are for personal educational use only.
 
-## 13. Updates to Terms
+- Unauthorized sharing, reproduction, or distribution is strictly prohibited
+- Materials remain the property of the center
+- Violations may result in termination of enrollment
 
-We may update this document periodically.
-Your continued use means acceptance of new Terms.
+---
 
-## 14. Contact Us
+## Attendance Policy
 
-**Manobikash GUIDE Centre**
-Patna Bazar, Jugnitala Main Road, Medinipur, West Bengal
-📧 info@manobikash.in
+- Regular attendance is mandatory for academic progress
+- Students must inform the center in advance for planned absences
+- Excessive absences may affect continuation in the program
+- Make-up classes are subject to teacher availability
 
-Thank you for being a part of Manobikash Guide Centre.`;
+---
 
-const PRIVACY_POLICY_MD = `# 🔒 Privacy Policy
+## Safety & Conduct
 
-**Effective Date:** 01 July 2025
-**Last Updated:** 01 July 2025
+- Students must follow all safety guidelines at the center
+- Parents/guardians are responsible for student drop-off and pick-up
+- The center is not responsible for personal belongings
+- Any damage to center property must be compensated
 
-At **Manobikash GUIDE Centre**, your privacy is our priority. This policy explains how we collect, use, and protect your information during academic and skill-development programs.
+---
 
-## 1. What Information We Collect
+## Account Termination
 
-### A. Personal Information
-• Name, phone number, email
-• Class, subjects, and preferred schedule
+We reserve the right to:
 
-### B. Learning Data
-• Attendance
-• Performance & improvement reports
+- Suspend or terminate enrollment for policy violations
+- Remove students who engage in misconduct
+- Cancel enrollment for fraudulent activities or non-payment
 
-### C. Technical Information (if using online resources)
-• Device type, IP address, app/website usage
+Students may request withdrawal by contacting us in person or via email.
 
-### D. Payment Information
-• Payment method, transaction ID
-(We **do not** store any bank/UPI credentials)
+---
 
-## 2. How We Use Your Information
+## Limitation of Liability
 
-• To provide classes and learning materials
-• To communicate schedules and updates
-• To improve teaching quality
-• To verify payments and admissions
+Manobikash Guide Centre is not responsible for:
 
-## 3. Data Sharing
+- Personal injuries occurring outside center premises
+- Lost or stolen personal belongings
+- Delays or cancellations due to unforeseen circumstances
+- External factors beyond our control
 
-We do **not** sell your data. Information may be shared only with:
+---
 
-• Teachers & staff (for academic purposes)
-• Payment gateways (Razorpay/UPI verification)
-• Legal authorities when required
+## Children's Safety
 
-## 4. Data Retention
+Students under 18 must be dropped off and picked up by parents/guardians. We prioritize a safe learning environment for all students.
 
-Your data is stored only as long as needed for academic and administrative purposes.
+---
 
-## 5. Data Security
+## Changes to Terms
 
-We use secure systems and restricted access to protect your information.
+We may update these Terms of Service periodically. Continued enrollment after changes indicates acceptance of the new terms.
 
-## 6. Your Rights
+---
 
-You may:
+## Contact Information
 
-• Request data updates
-• Request deletion (where legally possible)
-• Opt-out of promotional messages
+**Manobikash Guide Centre**
+📍 Patna Bazar, Jugnitala Main Road, Medinipur, West Bengal
+📧 dash.jyotirmoy1987@gmail.com
+📞 +91 9735836582
 
-Contact: **info@manobikash.in**
+**Center Hours:** Monday to Saturday, 8:00 AM - 8:00 PM
 
-## 7. Children's Safety
+---
 
-Students under 18 must participate under parental guidance.
+*Thank you for being part of Manobikash Guide Centre. We are committed to your educational success.*`;
 
-## 8. Policy Updates
+const PRIVACY_POLICY_MD = `# Privacy Policy
 
-We may update this policy periodically.
-Continued use indicates acceptance.
+**Effective Date:** January 1, 2025
+**Last Updated:** November 30, 2025
 
-## 9. Contact Us
+---
 
-**Manobikash GUIDE Centre**
-Patna Bazar, Jugnitala Main Road, Medinipur, West Bengal
-📧 info@manobikash.in
+## Our Commitment
 
-We are committed to protecting your privacy and providing a safe learning experience.`;
+At Manobikash Guide Centre, your privacy is our priority. This Privacy Policy explains how we collect, use, protect, and handle your personal information at our educational center.
+
+---
+
+## Information We Collect
+
+### Personal Information
+
+- Full name and date of birth
+- Phone number and email address
+- Residential address
+- Parent/guardian contact information (for students under 18)
+- Class/grade level and subjects of interest
+- Previous academic records (if provided)
+
+### Academic Data
+
+- Attendance records
+- Test scores and assessments
+- Assignment submissions and grades
+- Progress reports and feedback
+- Class participation notes
+
+### Payment Information
+
+- Payment method used (cash, UPI, bank transfer)
+- Fee payment records and receipts
+- Transaction dates and amounts
+
+**Important:** We do **NOT** store bank account details, card numbers, or UPI credentials.
+
+---
+
+## How We Use Your Information
+
+We use collected information to:
+
+- Provide in-person educational services and study materials
+- Communicate class schedules, updates, and announcements
+- Track attendance and academic progress
+- Prepare progress reports for parents/guardians
+- Improve teaching quality and course content
+- Verify fee payments and manage enrollments
+- Contact parents/guardians regarding student performance
+
+---
+
+## Data Sharing
+
+We **DO NOT** sell or rent your personal information to third parties.
+
+Information may be shared only with:
+
+- **Teachers & Staff** - For academic and administrative purposes
+- **Parents/Guardians** - Progress reports and important updates
+- **Legal Authorities** - When required by law
+
+---
+
+## Data Security
+
+We implement security measures to protect your information:
+
+- Secure storage of physical records in locked cabinets
+- Restricted access to student files
+- Staff training on data protection and confidentiality
+- Regular review of security practices
+
+We maintain confidentiality of all student records and personal information.
+
+---
+
+## Data Retention
+
+Your personal information is retained for:
+
+- Duration of enrollment plus 2 years for academic records
+- As required by educational regulations
+- Legal and administrative requirements
+
+You may request data deletion after this period, subject to legal obligations.
+
+---
+
+## Your Rights
+
+You have the right to:
+
+- **Access** your personal data and academic records
+- **Update** incorrect or outdated information
+- **Request copies** of progress reports and assessments
+- **Opt-out** of promotional communications
+- **Request deletion** of data (where legally permissible)
+
+To exercise these rights, visit our center or contact us at **dash.jyotirmoy1987@gmail.com**
+
+---
+
+## Children's Privacy
+
+For students under 18:
+
+- Parents/guardians must provide consent during enrollment
+- Parents/guardians have access to all student records
+- We communicate important updates to parents/guardians
+- Parents/guardians are responsible for accuracy of provided information
+
+---
+
+## Photography & Video
+
+Occasionally, we may take photographs or videos during classes or events for:
+
+- Internal documentation
+- Promotional materials (with prior consent)
+- Progress tracking
+
+Parents/guardians can opt-out of having their child photographed by informing us in writing.
+
+---
+
+## Third-Party Services
+
+We do not share student information with third-party services or websites. All educational activities are conducted in-person at our center.
+
+---
+
+## Policy Updates
+
+We may update this Privacy Policy periodically to reflect changes in:
+
+- Our practices
+- Legal requirements
+- Educational standards
+
+Continued enrollment after updates indicates acceptance of the revised policy. We will notify parents/guardians of significant changes.
+
+---
+
+## Contact Us
+
+For privacy-related questions or concerns:
+
+**Manobikash Guide Centre**
+📍 Patna Bazar, Jugnitala Main Road, Medinipur, West Bengal
+📧 dash.jyotirmoy1987@gmail.com
+📞 +91 9735836582
+
+**Visit us:** Monday to Saturday, 8:00 AM - 8:00 PM
+
+---
+
+*We are committed to protecting your privacy and providing a safe learning environment for all students.*`;
 
 export const MOCK_POLICIES = {
   REFUND: {
