@@ -7,6 +7,7 @@ import {
   Dialog,
   DialogContent,
   DialogClose,
+  DialogTitle,
 } from "@t2p-admin/ui/components/dialog";
 import { Button } from "@t2p-admin/ui/components/button";
 import { motion, AnimatePresence, useInView } from "motion/react";
@@ -375,6 +376,7 @@ export default function GallerySection() {
           <DialogClose className="absolute top-4 right-4 z-50 p-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors backdrop-blur-md border border-white/10">
             <X className="h-5 w-5" />
           </DialogClose>
+          <DialogTitle className="sr-only">Image Gallery</DialogTitle>
 
           {selectedImage && (
             <div className="relative w-full h-full flex flex-col items-center justify-center">
