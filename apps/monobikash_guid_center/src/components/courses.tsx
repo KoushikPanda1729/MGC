@@ -5,8 +5,6 @@ import { motion } from "motion/react";
 import { Button } from "@t2p-admin/ui/components/button";
 import {
   Card,
-  CardHeader,
-  CardTitle,
   CardDescription,
   CardFooter,
 } from "@t2p-admin/ui/components/card";
@@ -14,6 +12,7 @@ import { Badge } from "@t2p-admin/ui/components/badge";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
+import { brico } from "./fonts";
 
 type CourseType = "middle" | "secondary" | "higher";
 
@@ -131,23 +130,33 @@ export default function CourseSection() {
   return (
     <section
       id="courses"
-      className="relative flex w-full items-center justify-center overflow-hidden py-16"
+      className="relative flex w-full items-center justify-center overflow-hidden py-20 md:py-28"
     >
+      {/* Enhanced Background */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(var(--primary)/0.15),transparent_50%)]" />
+        <div className="absolute right-1/4 top-1/4 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
+        <div className="absolute left-1/3 bottom-1/4 h-80 w-80 rounded-full bg-purple-500/10 blur-3xl" />
+      </div>
+
       <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="relative mx-auto max-w-4xl text-center mb-12">
+        {/* Header with Enhanced Typography */}
+        <div className="relative mx-auto max-w-4xl text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
             className={cn(
-              "mb-4 cursor-crosshair bg-gradient-to-b from-foreground via-foreground/80 to-foreground/40 bg-clip-text text-4xl font-bold text-transparent sm:text-6xl"
+              "mb-6 bg-gradient-to-b from-foreground via-foreground/90 to-foreground/60 bg-clip-text text-4xl font-bold text-transparent sm:text-6xl",
+              brico.className
             )}
           >
             {selectedHeading.split(" ").map((word, index) => (
               <span key={index}>
                 {["Academic", "Programs"].includes(word) ? (
-                  <span className="bg-primary from-foreground via-blue-300 to-primary bg-clip-text text-transparent dark:bg-gradient-to-b">
+                  <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                     {word}
                   </span>
                 ) : (
@@ -159,9 +168,10 @@ export default function CourseSection() {
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="mb-8 mt-2 text-muted-foreground sm:text-lg"
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-muted-foreground text-lg leading-relaxed"
           >
             Comprehensive coaching for classes 6 to 12 with expert faculty.
             <br className="hidden sm:block" />
@@ -169,21 +179,22 @@ export default function CourseSection() {
           </motion.p>
         </div>
 
-        {/* Tabs */}
+        {/* Enhanced Tabs with Pill Design */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex justify-center mb-12"
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="flex justify-center mb-14"
         >
-          <div className="inline-flex items-center gap-2 p-1 bg-muted rounded-lg">
+          <div className="inline-flex items-center gap-2 p-1.5 bg-gradient-to-r from-muted/80 to-muted/60 backdrop-blur-sm rounded-full border border-border/50 shadow-lg">
             <button
               onClick={() => setActiveTab("middle")}
               className={cn(
-                "px-6 py-2 rounded-md text-sm font-medium transition-all",
+                "px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300",
                 activeTab === "middle"
-                  ? "bg-primary text-primary-foreground shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
+                  ? "bg-gradient-to-r from-primary to-purple-600 text-white shadow-lg scale-105"
+                  : "text-muted-foreground hover:text-foreground hover:bg-background/50"
               )}
             >
               Class 6-8
@@ -191,10 +202,10 @@ export default function CourseSection() {
             <button
               onClick={() => setActiveTab("secondary")}
               className={cn(
-                "px-6 py-2 rounded-md text-sm font-medium transition-all",
+                "px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300",
                 activeTab === "secondary"
-                  ? "bg-primary text-primary-foreground shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
+                  ? "bg-gradient-to-r from-primary to-purple-600 text-white shadow-lg scale-105"
+                  : "text-muted-foreground hover:text-foreground hover:bg-background/50"
               )}
             >
               Class 9-10
@@ -202,10 +213,10 @@ export default function CourseSection() {
             <button
               onClick={() => setActiveTab("higher")}
               className={cn(
-                "px-6 py-2 rounded-md text-sm font-medium transition-all",
+                "px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300",
                 activeTab === "higher"
-                  ? "bg-primary text-primary-foreground shadow-sm"
-                  : "text-muted-foreground hover:text-foreground"
+                  ? "bg-gradient-to-r from-primary to-purple-600 text-white shadow-lg scale-105"
+                  : "text-muted-foreground hover:text-foreground hover:bg-background/50"
               )}
             >
               Class 11-12
@@ -213,13 +224,13 @@ export default function CourseSection() {
           </div>
         </motion.div>
 
-        {/* Courses Grid */}
+        {/* Enhanced Courses Grid */}
         <motion.div
           key={activeTab}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="max-w-7xl mx-auto flex md:grid overflow-x-auto md:overflow-x-visible md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0 snap-x snap-mandatory md:snap-none no-scrollbar"
+          className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-0"
         >
           {courses.map((course, index) => (
             <motion.div
@@ -227,118 +238,91 @@ export default function CourseSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="flex justify-center flex-shrink-0 w-[70vw] md:w-auto snap-center"
+              whileHover={{ y: -8, transition: { duration: 0.3 } }}
+              className="group"
             >
-              <Card className="overflow-hidden rounded-xl shadow-md border pt-0 w-full flex flex-col">
-                {/* Gradient Header */}
-                <motion.div
-                  className="relative w-full h-48 flex-shrink-0 bg-muted flex items-center justify-center rounded-t-xl overflow-hidden"
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
-                >
+              <Card className="overflow-hidden rounded-3xl shadow-lg border border-border/50 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm hover:shadow-2xl hover:border-primary/30 transition-all duration-300 h-full flex flex-col">
+                {/* Enhanced Image Header */}
+                <div className="relative w-full h-56 flex-shrink-0 overflow-hidden">
                   <Image
                     src={course.image}
                     alt={course.title}
                     fill
-                    className="object-cover"
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-black/20" /> {/* Overlay for better badge visibility if needed */}
-                  <Badge className="absolute top-2 left-2 bg-yellow-400 text-black rounded-full px-2 py-0.5 text-xs font-medium z-10">
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+
+                  {/* Floating Badge */}
+                  <Badge className="absolute top-4 left-4 bg-gradient-to-r from-yellow-400 to-orange-400 text-black rounded-full px-3 py-1 text-xs font-bold shadow-lg z-10">
                     {course.duration}
                   </Badge>
-                </motion.div>
 
-                {/* Text Content */}
-                <CardHeader className="pb-2 pt-3 px-4 flex-shrink-0">
-                  <CardTitle className="text-blue-600 text-xl leading-tight">
-                    {course.title}
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground text-sm leading-tight">
-                    {course.description}
-                  </CardDescription>
-                </CardHeader>
-
-                {/* Batch Details */}
-                <div className="px-4 space-y-2 pb-3 flex-1">
-                  {course.includes && (
-                    <div>
-                      <h4 className="font-semibold text-sm mb-1">
-                        Batch Includes
-                      </h4>
-                      <ul className="space-y-0">
-                        {course.includes.map((item, i) => (
-                          <li
-                            key={i}
-                            className="text-sm text-muted-foreground flex items-start leading-tight"
-                          >
-                            <span className="mr-1 text-primary">✓</span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {course.learningMaterial && (
-                    <div>
-                      <h4 className="font-semibold text-sm mb-1">
-                        Learning Material
-                      </h4>
-                      <ul className="space-y-0">
-                        {course.learningMaterial.map((item, i) => (
-                          <li
-                            key={i}
-                            className="text-sm text-muted-foreground flex items-start leading-tight"
-                          >
-                            <span className="mr-1">📚</span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {course.outcomes && (
-                    <div>
-                      <h4 className="font-semibold text-sm mb-1">
-                        After Completion
-                      </h4>
-                      <ul className="space-y-0">
-                        {course.outcomes.map((item, i) => (
-                          <li
-                            key={i}
-                            className="text-sm text-muted-foreground flex items-start leading-tight"
-                          >
-                            <span className="mr-1">🎯</span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
+                  {/* Course Title Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
+                    <h3 className="text-white text-xl font-bold drop-shadow-lg">
+                      {course.title}
+                    </h3>
+                  </div>
                 </div>
 
-                <CardFooter className="flex flex-col items-start gap-2 pt-3 px-3 sm:px-6 pb-3 sm:pb-4 flex-shrink-0 mt-auto border border-white">
-                  <div className="flex items-center justify-between w-full gap-1.5 sm:gap-2">
-                    <div className="flex items-center gap-1 sm:gap-1.5 flex-shrink min-w-0">
-                      <span className="text-sm sm:text-lg font-bold text-gray-900 whitespace-nowrap">
-                        {course.price}
-                      </span>
-                      {course.originalPrice && (
-                        <span className="text-xs text-gray-400 line-through whitespace-nowrap">
-                          {course.originalPrice}
+                {/* Content Section */}
+                <div className="p-5 flex-1 flex flex-col">
+                  <CardDescription className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    {course.description}
+                  </CardDescription>
+
+                  {/* Compact Feature Lists */}
+                  <div className="space-y-3 mb-4 flex-1">
+                    {course.includes && (
+                      <div>
+                        <h4 className="font-bold text-xs text-primary mb-1.5">
+                          INCLUDES
+                        </h4>
+                        <ul className="space-y-1">
+                          {course.includes.slice(0, 2).map((item, i) => (
+                            <li
+                              key={i}
+                              className="text-xs text-muted-foreground flex items-start"
+                            >
+                              <span className="mr-1.5 text-primary">✓</span>
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Enhanced Footer with Pricing */}
+                  <div className="pt-4 border-t border-border/50 mt-auto">
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-2xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+                          {course.price}
                         </span>
+                        {course.originalPrice && (
+                          <span className="text-sm text-muted-foreground line-through">
+                            {course.originalPrice}
+                          </span>
+                        )}
+                      </div>
+                      {course.originalPrice && (
+                        <Badge variant="secondary" className="bg-green-500/10 text-green-600 border-green-500/20">
+                          Save {Math.round(((parseInt(course.originalPrice.replace(/[^0-9]/g, '')) - parseInt(course.price.replace(/[^0-9]/g, ''))) / parseInt(course.originalPrice.replace(/[^0-9]/g, ''))) * 100)}%
+                        </Badge>
                       )}
                     </div>
                     <Button
                       asChild
-                      className="px-2 sm:px-4 py-1 h-7 sm:h-8 text-[10px] sm:text-sm flex-shrink-0 whitespace-nowrap"
+                      className="w-full bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                     >
-                      <Link href={course.link} target="_blank" rel="noopener noreferrer">Register Now</Link>
+                      <Link href={course.link} target="_blank" rel="noopener noreferrer">
+                        Register Now
+                      </Link>
                     </Button>
                   </div>
-                </CardFooter>
+                </div>
               </Card>
             </motion.div>
           ))}

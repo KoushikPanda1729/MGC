@@ -11,6 +11,7 @@ import {
 import { motion } from "motion/react";
 import { brico } from "./fonts";
 import Image from "next/image";
+import { Badge } from "@t2p-admin/ui/components/badge";
 
 const testimonials = [
   {
@@ -74,14 +75,14 @@ export default function TestimonialSection() {
   return (
     <section
       id="testimonial"
-      className="relative overflow-hidden py-16 md:py-24"
+      className="relative overflow-hidden py-20 md:py-28"
     >
-      {/* Background */}
+      {/* Enhanced Background */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(var(--primary)/0.2),transparent_60%)]" />
-        <div className="absolute left-1/4 top-1/4 h-32 w-32 rounded-full bg-primary/5 blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 h-40 w-40 rounded-full bg-primary/10 blur-3xl" />
-        <div className="absolute inset-0 bg-[length:20px_20px] bg-grid-foreground/[0.02]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,hsl(var(--primary)/0.15),transparent_50%)]" />
+        <div className="absolute left-1/4 top-1/3 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 h-80 w-80 rounded-full bg-purple-500/10 blur-3xl" />
       </div>
 
       {/* Heading */}
@@ -89,150 +90,156 @@ export default function TestimonialSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="relative mb-12 text-center md:mb-16"
+          className="relative mb-16 text-center"
         >
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
             className={cn(
-              "mb-4 cursor-crosshair bg-gradient-to-b from-foreground via-foreground/80 to-foreground/40 bg-clip-text text-4xl font-bold text-transparent sm:text-7xl",
+              "mb-6 bg-gradient-to-b from-foreground via-foreground/90 to-foreground/60 bg-clip-text text-4xl font-bold text-transparent sm:text-6xl",
               brico.className
             )}
           >
             See what{" "}
-            <span className="bg-primary from-foreground via-rose-300 to-primary bg-clip-text text-transparent dark:bg-gradient-to-b">
+            <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
               learners are saying
             </span>
           </motion.h2>
 
           <motion.p
-            className="mx-auto max-w-2xl text-base text-muted-foreground md:text-lg"
+            className="mx-auto max-w-2xl text-base text-muted-foreground md:text-lg leading-relaxed"
             initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
             Real feedback from students who have improved their skills and
-            confidence through Manobikash Guide Centre’s dedicated guidance and
+            confidence through Manobikash Guide Centre's dedicated guidance and
             supportive learning environment.
           </motion.p>
         </motion.div>
 
-        {/* Carousel */}
-        <div className="overflow-hidden py-4" ref={emblaRef}>
-          <div className="flex">
+        {/* Enhanced Carousel */}
+        <div className="overflow-hidden py-8" ref={emblaRef}>
+          <div className="flex gap-6">
             {testimonials.map((testimonial, index) => (
               <div
                 key={`${testimonial.speaker}-${index}`}
-                className="flex justify-center px-2 md:px-4"
+                className="flex-[0_0_85%] sm:flex-[0_0_400px] md:flex-[0_0_450px] lg:flex-[0_0_500px] min-w-0"
               >
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="w-[75vw] sm:w-[360px] md:w-[400px] lg:w-[460px] overflow-hidden rounded-3xl  shadow-sm"
+                  whileHover={{ y: -8, transition: { duration: 0.3 } }}
+                  className="group h-full"
                 >
-                  {/* Image Section */}
-                  <div className="relative aspect-square w-full overflow-hidden">
-                    <Image
-                      src={testimonial.image}
-                      alt={`${testimonial.speaker} testimonial`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 640px) 75vw, (max-width: 768px) 360px, (max-width: 1024px) 400px, 460px"
-                    />
-                  </div>
+                  <div className="h-full overflow-hidden rounded-3xl border border-border/50 bg-gradient-to-br from-card/90 to-card/60 backdrop-blur-sm shadow-lg hover:shadow-2xl hover:border-primary/30 transition-all duration-300 flex flex-col">
+                    {/* Enhanced Image Section */}
+                    <div className="relative aspect-square w-full overflow-hidden flex-shrink-0">
+                      <Image
+                        src={testimonial.image}
+                        alt={`${testimonial.speaker} testimonial`}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        sizes="(max-width: 640px) 85vw, (max-width: 768px) 400px, (max-width: 1024px) 450px, 500px"
+                      />
+                      {/* Gradient Overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
 
-                  {/* Content Section */}
-                  <div className="bg-white p-3 md:p-6 rounded-b-3xl">
-                    {/* Title and Duration */}
-                    <div className="mb-2 md:mb-4">
-                      <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-1">
-                        {testimonial.title}
-                      </h3>
-                      <p className="text-xs md:text-sm text-gray-600">
-                        {testimonial.category}
-                      </p>
+                      {/* Achievement Badge */}
+                      <Badge className="absolute top-4 right-4 bg-gradient-to-r from-yellow-400 to-orange-400 text-black font-bold shadow-lg border-0 px-3 py-1.5">
+                        🏆 {testimonial.badge}
+                      </Badge>
                     </div>
 
-                    {/* User Profile */}
-                    <div className="flex items-start gap-2 md:gap-3 mb-2 md:mb-4">
-                      <Avatar className="h-10 w-10 md:h-14 md:w-14 border-2 border-gray-200 flex-shrink-0">
-                        <AvatarImage src={testimonial.avatar} alt={testimonial.speaker} />
-                        <AvatarFallback className="bg-gradient-to-br from-indigo-400 to-purple-500 text-white text-sm md:text-lg font-bold">
-                          {testimonial.speaker
-                            .split(" ")
-                            .map((n) => n[0])
-                            .join("")}
-                        </AvatarFallback>
-                      </Avatar>
-                      <div className="flex-1">
-                        <div className="flex items-center gap-1 md:gap-2 mb-0.5 md:mb-1">
-                          <h4 className="text-sm md:text-lg font-bold text-gray-900">
-                            {testimonial.speaker}
-                          </h4>
-                          <div className="flex items-center gap-0.5 md:gap-1 rounded-full bg-green-500 px-1.5 md:px-2 py-0.5">
-                            <svg
-                              className="h-2.5 w-2.5 md:h-3 md:w-3 text-white"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                              />
-                            </svg>
-                            <span className="text-[10px] md:text-xs font-semibold text-white">
-                              Verified
-                            </span>
+                    {/* Enhanced Content Section */}
+                    <div className="p-6 flex-1 flex flex-col bg-card">
+                      {/* User Profile */}
+                      <div className="flex items-start gap-3 mb-4">
+                        <Avatar className="h-14 w-14 border-2 border-primary/20 flex-shrink-0 shadow-md">
+                          <AvatarImage src={testimonial.avatar} alt={testimonial.speaker} />
+                          <AvatarFallback className="bg-gradient-to-br from-primary to-purple-600 text-white text-lg font-bold">
+                            {testimonial.speaker
+                              .split(" ")
+                              .map((n) => n[0])
+                              .join("")}
+                          </AvatarFallback>
+                        </Avatar>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-1 flex-wrap">
+                            <h4 className="text-lg font-bold text-foreground">
+                              {testimonial.speaker}
+                            </h4>
+                            <div className="flex items-center gap-1 rounded-full bg-green-500 px-2 py-0.5">
+                              <svg
+                                className="h-3 w-3 text-white"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                  stroke="currentColor"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                              </svg>
+                              <span className="text-xs font-semibold text-white">
+                                Verified
+                              </span>
+                            </div>
                           </div>
+                          <p className="text-sm text-muted-foreground flex items-center gap-1">
+                            <svg
+                              className="h-4 w-4 text-red-500 flex-shrink-0"
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                            >
+                              <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" />
+                            </svg>
+                            {testimonial.location}
+                          </p>
                         </div>
-                        <p className="text-xs md:text-sm text-gray-500 flex items-center gap-1">
-                          <svg
-                            className="h-3 w-3 md:h-4 md:w-4 text-red-500"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                          >
-                            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" />
-                          </svg>
-                          {testimonial.location}
-                        </p>
                       </div>
-                    </div>
 
-                    {/* Testimonial Text */}
-                    <p className="text-gray-700 text-xs md:text-sm leading-relaxed mb-2 md:mb-4">
-                      &ldquo;{testimonial.testimonial}&rdquo;
-                    </p>
+                      {/* Category Badge */}
+                      <Badge variant="secondary" className="w-fit mb-3 bg-primary/10 text-primary border-primary/20">
+                        {testimonial.category}
+                      </Badge>
 
-                    {/* Rating and Time */}
-                    <div className="flex items-center gap-2 md:gap-3">
-                      <div className="flex gap-0.5">
-                        {[...Array(testimonial.rating)].map((_, i) => (
-                          <svg
-                            key={i}
-                            className="h-4 w-4 md:h-6 md:w-6 text-yellow-400"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                          >
-                            <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                          </svg>
-                        ))}
+                      {/* Testimonial Text */}
+                      <p className="text-muted-foreground text-sm leading-relaxed mb-4 flex-1">
+                        &ldquo;{testimonial.testimonial}&rdquo;
+                      </p>
+
+                      {/* Rating and Time */}
+                      <div className="flex items-center gap-3 pt-3 border-t border-border/50">
+                        <div className="flex gap-0.5">
+                          {[...Array(testimonial.rating)].map((_, i) => (
+                            <svg
+                              key={i}
+                              className="h-5 w-5 text-yellow-400"
+                              viewBox="0 0 24 24"
+                              fill="currentColor"
+                            >
+                              <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            </svg>
+                          ))}
+                        </div>
+                        <span className="text-sm font-bold text-foreground">
+                          {testimonial.rating}.0
+                        </span>
+                        <span className="text-sm text-muted-foreground">
+                          • {testimonial.timeAgo}
+                        </span>
                       </div>
-                      <span className="text-xs md:text-sm font-semibold text-gray-900">
-                        {testimonial.rating}.0
-                      </span>
-                      <span className="text-xs md:text-sm text-gray-500">
-                        • {testimonial.timeAgo}
-                      </span>
                     </div>
                   </div>
                 </motion.div>
@@ -240,6 +247,19 @@ export default function TestimonialSection() {
             ))}
           </div>
         </div>
+
+        {/* Carousel Navigation Hint */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="text-center mt-8"
+        >
+          <p className="text-sm text-muted-foreground">
+            ← Drag to see more testimonials →
+          </p>
+        </motion.div>
       </div>
     </section>
   );
