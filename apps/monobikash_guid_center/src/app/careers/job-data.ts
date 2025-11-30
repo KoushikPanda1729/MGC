@@ -12,82 +12,93 @@ export interface JobPosting {
 export const jobPostings: JobPosting[] = [
   {
     id: "1",
-    title: "English Language Trainer",
-    department: "Education",
-    location: "Delhi NCR",
+    title: "Subject Teacher – Class 6 to 8",
+    department: "Academics",
+    location: "Medinipur (Offline)",
     type: "Full-time",
-    description: "Join our team as an English Language Trainer and help students improve their communication skills and achieve fluency.",
+    description:
+      "We are looking for passionate teachers for Class 6–8 (Maths, Science, English, SST). Help students build strong fundamentals and score higher in school exams.",
     responsibilities: [
-      "Conduct engaging English language classes for students",
-      "Develop and implement innovative teaching methods",
-      "Assess student progress and provide constructive feedback",
-      "Create a positive and motivating learning environment"
+      "Teach assigned subjects to students of Class 6–8",
+      "Prepare lesson plans and daily class activities",
+      "Conduct regular tests and evaluate student performance",
+      "Clear doubts and support each student individually",
+      "Maintain class discipline and learning environment",
     ],
     qualifications: [
-      "Bachelor's degree in English or related field",
-      "2+ years of teaching experience",
-      "Excellent communication and presentation skills",
-      "Passion for education and student development"
-    ]
+      "Bachelor's degree in any discipline (B.Sc / B.A preferred)",
+      "Good subject knowledge and communication skills",
+      "Prior teaching experience is a plus",
+      "Ability to manage and motivate school students",
+    ],
   },
+
   {
     id: "2",
-    title: "Content Developer",
-    department: "Curriculum",
-    location: "Delhi NCR / Remote",
+    title: "Subject Teacher – Class 9 & 10",
+    department: "Academics",
+    location: "Medinipur (Offline)",
     type: "Full-time",
-    description: "Create engaging educational content that helps students learn English effectively and enjoyably.",
+    description:
+      "We are hiring dedicated teachers for Class 9–10 (Maths, Physical Science, Life Science, English). Join us in helping students excel in board-level preparation.",
     responsibilities: [
-      "Design and develop course materials and curriculum",
-      "Create video scripts and learning resources",
-      "Collaborate with trainers to ensure content quality",
-      "Research and implement best practices in education"
+      "Teach core subjects for Class 9–10",
+      "Prepare students for school and board examinations",
+      "Conduct weekly and monthly assessments",
+      "Provide doubt-clearing sessions and personalized guidance",
+      "Maintain academic records for each student",
     ],
     qualifications: [
-      "Bachelor's degree in Education, English, or related field",
-      "Strong writing and content creation skills",
-      "Experience in curriculum development",
-      "Creative mindset with attention to detail"
-    ]
+      "Bachelor’s or Master’s degree in relevant subject",
+      "Strong understanding of the Class 9–10 curriculum",
+      "Experience in teaching board classes preferred",
+      "Patient, disciplined, and student-friendly teaching style",
+    ],
   },
+
   {
     id: "3",
-    title: "Student Counselor",
-    department: "Student Success",
-    location: "Delhi NCR",
+    title: "Senior Subject Teacher – Class 11 & 12",
+    department: "Academics",
+    location: "Medinipur (Offline)",
     type: "Full-time",
-    description: "Guide and support students in their learning journey, helping them achieve their educational goals.",
+    description:
+      "We are hiring experienced teachers for Class 11–12 (Science, Commerce & Arts streams). Help senior secondary students prepare for board exams and competitive foundations.",
     responsibilities: [
-      "Provide counseling and guidance to students",
-      "Help students set and achieve learning goals",
-      "Address student concerns and provide support",
-      "Maintain student records and track progress"
+      "Teach subject-specific classes (Physics / Chemistry / Maths / Biology / Accountancy / Business Studies / English)",
+      "Guide students with clear conceptual understanding",
+      "Prepare chapter-wise notes and exam-based questions",
+      "Conduct mock tests and track academic progress",
+      "Provide mentorship for board exam preparation",
     ],
     qualifications: [
-      "Bachelor's degree in Psychology, Education, or related field",
-      "Excellent interpersonal and communication skills",
-      "Empathetic and patient approach",
-      "Experience in counseling or student support preferred"
-    ]
+      "Master’s degree in relevant subject",
+      "Teaching experience in senior secondary classes required",
+      "Strong board exam-oriented teaching approach",
+      "Ability to motivate and mentor higher-class students",
+    ],
   },
+
   {
     id: "4",
-    title: "Digital Marketing Specialist",
-    department: "Marketing",
-    location: "Delhi NCR",
+    title: "Admission Counselor",
+    department: "Administration",
+    location: "Medinipur (Offline)",
     type: "Full-time",
-    description: "Drive our digital presence and help more students discover quality education opportunities.",
+    description:
+      "Join our team as an Admission Counselor and help parents and students choose the right coaching program for Classes 6–12.",
     responsibilities: [
-      "Plan and execute digital marketing campaigns",
-      "Manage social media platforms and content",
-      "Analyze marketing metrics and optimize strategies",
-      "Collaborate with content team for marketing materials"
+      "Attend walk-in parents and explain course details",
+      "Guide students toward the right class/subject batch",
+      "Maintain admission records and daily reports",
+      "Follow up with inquiries and convert leads to admissions",
+      "Coordinate with academic team for batch allotment",
     ],
     qualifications: [
-      "Bachelor's degree in Marketing or related field",
-      "2+ years of digital marketing experience",
-      "Proficiency in social media marketing and SEO",
-      "Strong analytical and creative skills"
-    ]
-  }
+      "Good communication and convincing skills",
+      "Experience in counseling or front-desk roles preferred",
+      "Basic computer knowledge (Excel, WhatsApp, etc.)",
+      "Friendly personality and problem-solving attitude",
+    ],
+  },
 ];
