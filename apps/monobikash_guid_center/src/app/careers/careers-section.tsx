@@ -14,7 +14,6 @@ import {
   Briefcase,
   MapPin,
   Clock,
-  GraduationCap,
   Users,
   Heart,
 } from "lucide-react";
@@ -24,24 +23,7 @@ import { motion } from "motion/react";
 import { cn } from "@t2p-admin/ui/lib/utils";
 import { brico } from "../../components/fonts";
 
-const benefits = [
-  {
-    icon: GraduationCap,
-    title: "Professional Growth",
-    description:
-      "Continuous learning opportunities and career development programs",
-  },
-  {
-    icon: Users,
-    title: "Collaborative Culture",
-    description: "Work with passionate educators and professionals",
-  },
-  {
-    icon: Heart,
-    title: "Work-Life Balance",
-    description: "Flexible work arrangements and supportive environment",
-  },
-];
+
 
 export default function CareersSection() {
   return (

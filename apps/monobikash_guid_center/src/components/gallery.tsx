@@ -139,9 +139,7 @@ export default function GallerySection() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [open, selectedImage, handlePreviousImage, handleNextImage]);
 
-  const goToSlide = (index: number) => {
-    setCarouselIndex(index);
-  };
+
 
   const goToPreviousSlide = () => {
     setCarouselIndex(

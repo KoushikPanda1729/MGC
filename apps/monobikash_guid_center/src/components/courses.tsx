@@ -6,7 +6,6 @@ import { Button } from "@t2p-admin/ui/components/button";
 import {
   Card,
   CardDescription,
-  CardFooter,
 } from "@t2p-admin/ui/components/card";
 import { Badge } from "@t2p-admin/ui/components/badge";
 import { cn } from "@/lib/utils";

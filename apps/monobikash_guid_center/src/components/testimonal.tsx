@@ -118,7 +118,7 @@ export default function TestimonialSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Real feedback from students who have improved their skills and
-            confidence through Manobikash Guide Centre's dedicated guidance and
+            confidence through Manobikash Guide Centre&apos;s dedicated guidance and
             supportive learning environment.
           </motion.p>
         </motion.div>
