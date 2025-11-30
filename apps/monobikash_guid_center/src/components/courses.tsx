@@ -13,6 +13,7 @@ import {
 import { Badge } from "@t2p-admin/ui/components/badge";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 
 type CourseType = "middle" | "secondary" | "higher";
 
@@ -25,11 +26,11 @@ export default function CourseSection() {
       {
         title: "Class 6 (WBBSE)",
         description: "Strong foundation in WB Board curriculum for Class 6.",
-        image: "/courses/course.jpeg",
+        image: "/images/monobikash_group_image.jpg",
         duration: "Annual Program",
         price: "₹800/month",
         originalPrice: "₹1000",
-        link: "#contact",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSeN_lMFa5Jnfk18NrTJHYlPLSvK28_EwmHDIeZ6NmVOW5w1Mw/viewform?usp=dialog",
         includes: ["Bengali, English, Math, Science, Social Science", "Weekly Tests"],
         learningMaterial: ["WBBSE Textbooks", "Chapter-wise Practice Sheets"],
         outcomes: ["Strong Foundation", "School Topper"],
@@ -37,11 +38,11 @@ export default function CourseSection() {
       {
         title: "Class 7 (WBBSE)",
         description: "Comprehensive WB Board preparation for Class 7.",
-        image: "/courses/course.jpeg",
+        image: "/images/monobikash_group_image.jpg",
         duration: "Annual Program",
         price: "₹900/month",
         originalPrice: "₹1100",
-        link: "#contact",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSeN_lMFa5Jnfk18NrTJHYlPLSvK28_EwmHDIeZ6NmVOW5w1Mw/viewform?usp=dialog",
         includes: ["All WBBSE Subjects", "Regular Assessments"],
         learningMaterial: ["WBBSE Syllabus Based", "Model Questions"],
         outcomes: ["Concept Mastery", "Academic Excellence"],
@@ -49,11 +50,11 @@ export default function CourseSection() {
       {
         title: "Class 8 (WBBSE)",
         description: "Prepare for Madhyamik with strong Class 8 foundation.",
-        image: "/courses/course.jpeg",
+        image: "/images/monobikash_group_image.jpg",
         duration: "Annual Program",
         price: "₹1000/month",
         originalPrice: "₹1200",
-        link: "#contact",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSeN_lMFa5Jnfk18NrTJHYlPLSvK28_EwmHDIeZ6NmVOW5w1Mw/viewform?usp=dialog",
         includes: ["Complete WBBSE Syllabus", "Unit Tests"],
         learningMaterial: ["Board Prescribed Books", "Advanced Practice"],
         outcomes: ["Madhyamik Ready", "Top Grades"],
@@ -63,11 +64,11 @@ export default function CourseSection() {
       {
         title: "Class 9 (WBBSE)",
         description: "Build strong base for Madhyamik Pariksha (Class 10).",
-        image: "/courses/course.jpeg",
+        image: "/images/monobikash_group_image.jpg",
         duration: "Annual Program",
         price: "₹1100/month",
         originalPrice: "₹1300",
-        link: "#contact",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSeN_lMFa5Jnfk18NrTJHYlPLSvK28_EwmHDIeZ6NmVOW5w1Mw/viewform?usp=dialog",
         includes: ["All Madhyamik Subjects", "Monthly Mock Tests"],
         learningMaterial: ["WBBSE Books", "Previous Year Questions"],
         outcomes: ["Madhyamik Foundation", "Strong Concepts"],
@@ -75,11 +76,11 @@ export default function CourseSection() {
       {
         title: "Class 10 - Madhyamik (WBBSE)",
         description: "Complete preparation for WB Madhyamik Pariksha.",
-        image: "/courses/course.jpeg",
+        image: "/images/monobikash_group_image.jpg",
         duration: "Annual Program",
         price: "₹1200/month",
         originalPrice: "₹1500",
-        link: "#contact",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSeN_lMFa5Jnfk18NrTJHYlPLSvK28_EwmHDIeZ6NmVOW5w1Mw/viewform?usp=dialog",
         includes: ["Full Madhyamik Coverage", "Board Pattern Tests", "Doubt Classes"],
         learningMaterial: ["WBBSE Syllabus", "Last 10 Years Papers", "Sample Papers"],
         outcomes: ["Madhyamik Success", "90%+ Target"],
@@ -89,11 +90,11 @@ export default function CourseSection() {
       {
         title: "Class 11 - Science (WBCHSE)",
         description: "Complete WB HS Science stream preparation.",
-        image: "/courses/course.jpeg",
+        image: "/images/monobikash_group_image.jpg",
         duration: "Annual Program",
         price: "₹1500/month",
         originalPrice: "₹1800",
-        link: "#contact",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSeN_lMFa5Jnfk18NrTJHYlPLSvK28_EwmHDIeZ6NmVOW5w1Mw/viewform?usp=dialog",
         includes: ["Physics, Chemistry, Math/Biology", "Bengali/English", "Weekly Tests"],
         learningMaterial: ["WBCHSE Textbooks", "Reference Materials"],
         outcomes: ["HS Foundation", "WBJEE Preparation"],
@@ -101,11 +102,11 @@ export default function CourseSection() {
       {
         title: "Class 11 - Commerce (WBCHSE)",
         description: "Expert coaching for WB HS Commerce stream.",
-        image: "/courses/course.jpeg",
+        image: "/images/monobikash_group_image.jpg",
         duration: "Annual Program",
         price: "₹1300/month",
         originalPrice: "₹1600",
-        link: "#contact",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSeN_lMFa5Jnfk18NrTJHYlPLSvK28_EwmHDIeZ6NmVOW5w1Mw/viewform?usp=dialog",
         includes: ["Accountancy, Business Studies, Economics", "Regular Practice"],
         learningMaterial: ["WBCHSE Syllabus Based", "Case Studies"],
         outcomes: ["Commerce Excellence", "HS Ready"],
@@ -113,11 +114,11 @@ export default function CourseSection() {
       {
         title: "Class 12 - Higher Secondary (WBCHSE)",
         description: "Complete preparation for WB Higher Secondary Exam.",
-        image: "/courses/course.jpeg",
+        image: "/images/monobikash_group_image.jpg",
         duration: "Annual Program",
         price: "₹1600/month",
         originalPrice: "₹2000",
-        link: "#contact",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSeN_lMFa5Jnfk18NrTJHYlPLSvK28_EwmHDIeZ6NmVOW5w1Mw/viewform?usp=dialog",
         includes: ["All HS Subjects", "Board Pattern Tests", "Special Doubt Sessions"],
         learningMaterial: ["WBCHSE Study Material", "Previous Year Papers", "Model Papers"],
         outcomes: ["HS Exam Success", "95%+ Target"],
@@ -231,20 +232,19 @@ export default function CourseSection() {
               <Card className="overflow-hidden rounded-xl shadow-md border pt-0 w-full flex flex-col">
                 {/* Gradient Header */}
                 <motion.div
-                  className="relative w-full h-48 flex-shrink-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center rounded-t-xl"
+                  className="relative w-full h-48 flex-shrink-0 bg-muted flex items-center justify-center rounded-t-xl overflow-hidden"
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <motion.h3
-                    className="text-white text-3xl font-bold text-center px-4"
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                  >
-                    {course.title}
-                  </motion.h3>
-                  <Badge className="absolute top-2 left-2 bg-yellow-400 text-black rounded-full px-2 py-0.5 text-xs font-medium">
+                  <Image
+                    src={course.image}
+                    alt={course.title}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/20" /> {/* Overlay for better badge visibility if needed */}
+                  <Badge className="absolute top-2 left-2 bg-yellow-400 text-black rounded-full px-2 py-0.5 text-xs font-medium z-10">
                     {course.duration}
                   </Badge>
                 </motion.div>
@@ -335,7 +335,7 @@ export default function CourseSection() {
                       asChild
                       className="px-2 sm:px-4 py-1 h-7 sm:h-8 text-[10px] sm:text-sm flex-shrink-0 whitespace-nowrap"
                     >
-                      <Link href={course.link}>Register Now</Link>
+                      <Link href={course.link} target="_blank" rel="noopener noreferrer">Register Now</Link>
                     </Button>
                   </div>
                 </CardFooter>

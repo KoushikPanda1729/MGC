@@ -12,53 +12,44 @@ import { motion } from "motion/react";
 import { brico } from "./fonts";
 import Image from "next/image";
 
-const videoTestimonials = [
+const testimonials = [
   {
-    url: "https://youtu.be/ScMzIvxBSi4",
-    embedId: "ScMzIvxBSi4",
-    speaker: "Sourav Mondal",
+    speaker: "Sritama Bhunia",
     avatar: "",
-    thumbnail:
+    image:
       "https://scontent.fccu9-4.fna.fbcdn.net/v/t39.30808-6/488683303_1112383454239453_155557094319131258_n.jpg?stp=c0.99.600.600a_dst-jpg_s552x414_tt6&_nc_cat=101&ccb=1-7&_nc_sid=50ad20&_nc_ohc=tnQnq7Dv65AQ7kNvwFE1UQs&_nc_oc=Adk-5NRLMnWrou-fWZO9TX3AqG4P6R1hTeq-rsQpqSROySQaWiPGoYT7hn4du-oeFhzwIEZW3Nh9hghWV1KuGpAF&_nc_zt=23&_nc_ht=scontent.fccu9-4.fna&_nc_gid=hiMPGlk04-xCD0Y_CPP2Tw&oh=00_AfhiGWEUlDMhbJA6zQksXOOhgDHgG-9JzrfxQkZ12AMcng&oe=69307EB7",
     location: "Midnapore, India",
-    badge: "Top Performer",
-    title: "How Manobikash Guide Centre Helped Sourav Improve",
+    badge: "5th Position - Class V",
+    title: "How Manobikash Guide Centre Helped Sritama Improve",
     category: "Student Testimonial",
-    duration: "4 min watch",
     testimonial:
       "Manobikash Guide Centre helped me build a strong foundation in my studies. The teachers explain concepts very clearly, and I gained a lot of confidence after joining...",
     rating: 5,
     timeAgo: "1 month ago",
   },
   {
-    url: "https://youtu.be/lX44CAz-JhU",
-    embedId: "lX44CAz-JhU",
-    speaker: "Ankita Paria",
+    speaker: "Srijita Patra",
     avatar: "",
-    thumbnail:
+    image:
       "https://scontent.fccu9-3.fna.fbcdn.net/v/t39.30808-6/488864987_1112380237573108_8703327777285704006_n.jpg?stp=c0.99.600.600a_dst-jpg_s552x414_tt6&_nc_cat=109&ccb=1-7&_nc_sid=50ad20&_nc_ohc=d2StxOcvPqwQ7kNvwE9DWSY&_nc_oc=Adm--aBgksp6fIQCeRR25kzPe2lPAyFylftOkLuefj35xx73Ew-MCBO8ar1DtsvEdobjK0VvRBE46CUwRy4dw1fj&_nc_zt=23&_nc_ht=scontent.fccu9-3.fna&_nc_gid=qjzp5VWpEnJCz8BjVnqU2w&oh=00_Afg2F-1nbSFOMQjPjqw-SvMZrUJd73RJjc3puNMnN0nDaw&oe=69307D53",
     location: "Kharagpur, India",
-    badge: "Star Student",
-    title: "Ankita Shares Her Experience at Manobikash Guide Centre",
+    badge: "3rd Position - Class X",
+    title: "Srijita Shares Her Experience at Manobikash Guide Centre",
     category: "Student Journey",
-    duration: "3 min watch",
     testimonial:
       "Thanks to the guidance and support at Manobikash Guide Centre, I improved my academic performance significantly. The environment is supportive and motivating...",
     rating: 5,
     timeAgo: "2 months ago",
   },
   {
-    url: "https://youtu.be/tAGnKpE4NCI",
-    embedId: "tAGnKpE4NCI",
-    speaker: "Ritam Ghosh",
+    speaker: "Soumya Bera",
     avatar: "",
-    thumbnail:
+    image:
       "https://scontent.fccu9-5.fna.fbcdn.net/v/t39.30808-6/488778978_1112380174239781_7808486960970416461_n.jpg?stp=c0.99.600.600a_dst-jpg_s552x414_tt6&_nc_cat=107&ccb=1-7&_nc_sid=50ad20&_nc_ohc=V7GecTg8qMwQ7kNvwHhRQC0&_nc_oc=AdnCfYmXAkrDvZiQbHUIn89kmXu6TAsX7LkumnPWEu3IELiZGsmQ1faF2j7yDCkhBYa6s02oplMsm0hyVTYeN1ZN&_nc_zt=23&_nc_ht=scontent.fccu9-5.fna&_nc_gid=hiMPGlk04-xCD0Y_CPP2Tw&oh=00_AfiHsXj-l9-SkV1Tef1gG8ACunHL1QoB1lcXHM6MhQ_vIQ&oe=693081C1",
     location: "Medinipur, India",
-    badge: "Achiever",
-    title: "Ritam Talks About His Growth at Manobikash Guide Centre",
+    badge: "3rd Position - Class VIII",
+    title: "Soumya Talks About His Growth at Manobikash Guide Centre",
     category: "Success Story",
-    duration: "5 min watch",
     testimonial:
       "The personalized attention at Manobikash Guide Centre made a huge difference for me. I improved in subjects I once found difficult. Highly recommended...",
     rating: 5,
@@ -133,9 +124,9 @@ export default function TestimonialSection() {
         {/* Carousel */}
         <div className="overflow-hidden py-4" ref={emblaRef}>
           <div className="flex">
-            {videoTestimonials.map((video, index) => (
+            {testimonials.map((testimonial, index) => (
               <div
-                key={`${video.url}-${index}`}
+                key={`${testimonial.speaker}-${index}`}
                 className="flex justify-center px-2 md:px-4"
               >
                 <motion.div
@@ -145,35 +136,15 @@ export default function TestimonialSection() {
                   viewport={{ once: true }}
                   className="w-[75vw] sm:w-[360px] md:w-[400px] lg:w-[460px] overflow-hidden rounded-3xl  shadow-sm"
                 >
-                  {/* Video Section */}
+                  {/* Image Section */}
                   <div className="relative aspect-square w-full overflow-hidden">
-                    {/* Video Thumbnail */}
-                    <a
-                      href={video.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block relative w-full h-full group"
-                    >
-                      <Image
-                        src={video.thumbnail}
-                        alt={`${video.speaker} testimonial thumbnail`}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 75vw, (max-width: 768px) 360px, (max-width: 1024px) 400px, 460px"
-                      />
-                      {/* Play button overlay */}
-                      <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
-                        <div className="bg-red-600 rounded-full p-4 md:p-5 group-hover:scale-110 transition-transform">
-                          <svg
-                            className="w-8 h-8 md:w-12 md:h-12 text-white"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M8 5v14l11-7z" />
-                          </svg>
-                        </div>
-                      </div>
-                    </a>
+                    <Image
+                      src={testimonial.image}
+                      alt={`${testimonial.speaker} testimonial`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 75vw, (max-width: 768px) 360px, (max-width: 1024px) 400px, 460px"
+                    />
                   </div>
 
                   {/* Content Section */}
@@ -181,19 +152,19 @@ export default function TestimonialSection() {
                     {/* Title and Duration */}
                     <div className="mb-2 md:mb-4">
                       <h3 className="text-sm md:text-lg font-bold text-gray-900 mb-1">
-                        {video.title}
+                        {testimonial.title}
                       </h3>
                       <p className="text-xs md:text-sm text-gray-600">
-                        {video.category} • {video.duration}
+                        {testimonial.category}
                       </p>
                     </div>
 
                     {/* User Profile */}
                     <div className="flex items-start gap-2 md:gap-3 mb-2 md:mb-4">
                       <Avatar className="h-10 w-10 md:h-14 md:w-14 border-2 border-gray-200 flex-shrink-0">
-                        <AvatarImage src={video.avatar} alt={video.speaker} />
+                        <AvatarImage src={testimonial.avatar} alt={testimonial.speaker} />
                         <AvatarFallback className="bg-gradient-to-br from-indigo-400 to-purple-500 text-white text-sm md:text-lg font-bold">
-                          {video.speaker
+                          {testimonial.speaker
                             .split(" ")
                             .map((n) => n[0])
                             .join("")}
@@ -202,7 +173,7 @@ export default function TestimonialSection() {
                       <div className="flex-1">
                         <div className="flex items-center gap-1 md:gap-2 mb-0.5 md:mb-1">
                           <h4 className="text-sm md:text-lg font-bold text-gray-900">
-                            {video.speaker}
+                            {testimonial.speaker}
                           </h4>
                           <div className="flex items-center gap-0.5 md:gap-1 rounded-full bg-green-500 px-1.5 md:px-2 py-0.5">
                             <svg
@@ -232,20 +203,20 @@ export default function TestimonialSection() {
                           >
                             <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" />
                           </svg>
-                          {video.location}
+                          {testimonial.location}
                         </p>
                       </div>
                     </div>
 
                     {/* Testimonial Text */}
                     <p className="text-gray-700 text-xs md:text-sm leading-relaxed mb-2 md:mb-4">
-                      &ldquo;{video.testimonial}&rdquo;
+                      &ldquo;{testimonial.testimonial}&rdquo;
                     </p>
 
                     {/* Rating and Time */}
                     <div className="flex items-center gap-2 md:gap-3">
                       <div className="flex gap-0.5">
-                        {[...Array(video.rating)].map((_, i) => (
+                        {[...Array(testimonial.rating)].map((_, i) => (
                           <svg
                             key={i}
                             className="h-4 w-4 md:h-6 md:w-6 text-yellow-400"
@@ -257,10 +228,10 @@ export default function TestimonialSection() {
                         ))}
                       </div>
                       <span className="text-xs md:text-sm font-semibold text-gray-900">
-                        {video.rating}.0
+                        {testimonial.rating}.0
                       </span>
                       <span className="text-xs md:text-sm text-gray-500">
-                        • {video.timeAgo}
+                        • {testimonial.timeAgo}
                       </span>
                     </div>
                   </div>
