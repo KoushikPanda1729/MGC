@@ -228,7 +228,7 @@ export default function CourseSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex justify-center flex-shrink-0 w-[70vw] md:w-auto snap-center"
             >
-              <Card className="overflow-hidden rounded-xl shadow-md border pt-0 w-full max-w-[400px] flex flex-col">
+              <Card className="overflow-hidden rounded-xl shadow-md border pt-0 w-full flex flex-col">
                 {/* Gradient Header */}
                 <motion.div
                   className="relative w-full h-48 flex-shrink-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center rounded-t-xl"
@@ -319,21 +319,21 @@ export default function CourseSection() {
                   )}
                 </div>
 
-                <CardFooter className="flex flex-col items-start gap-2  pt-3 px-6 mb-4 flex-shrink-0 mt-auto border border-white">
-                  <div className="flex items-center justify-between w-full gap-2">
-                    <div className="flex items-center gap-2">
-                      <span className="text-lg font-bold text-gray-900">
+                <CardFooter className="flex flex-col items-start gap-2 pt-3 px-3 sm:px-6 pb-3 sm:pb-4 flex-shrink-0 mt-auto border border-white">
+                  <div className="flex items-center justify-between w-full gap-1.5 sm:gap-2">
+                    <div className="flex items-center gap-1 sm:gap-1.5 flex-shrink min-w-0">
+                      <span className="text-sm sm:text-lg font-bold text-gray-900 whitespace-nowrap">
                         {course.price}
                       </span>
                       {course.originalPrice && (
-                        <span className="text-xs text-gray-400 line-through">
+                        <span className="text-xs text-gray-400 line-through whitespace-nowrap">
                           {course.originalPrice}
                         </span>
                       )}
                     </div>
                     <Button
                       asChild
-                      className="px-3 sm:px-4 py-1 h-8 text-xs sm:text-sm flex-shrink-0 ml-2"
+                      className="px-2 sm:px-4 py-1 h-7 sm:h-8 text-[10px] sm:text-sm flex-shrink-0 whitespace-nowrap"
                     >
                       <Link href={course.link}>Register Now</Link>
                     </Button>
