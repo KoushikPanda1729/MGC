@@ -198,7 +198,7 @@ This policy applies to all payment methods:
 For refund inquiries or support:
 
 **Manobikash Guide Centre**
-📍 Patna Bazar, Jugnitala Main Road, Medinipur, West Bengal
+📍 Rangamati (Near - High school), Mitra- Compound (Near -Hotel Deblok), Abash (Near Shitola Temple), Medinipur, West Bengal
 📧 dash.jyotirmoy1987@gmail.com
 📞 +91 9735836582
 
@@ -344,7 +344,7 @@ We may update these Terms of Service periodically. Continued enrollment after ch
 ## Contact Information
 
 **Manobikash Guide Centre**
-📍 Patna Bazar, Jugnitala Main Road, Medinipur, West Bengal
+📍 Rangamati (Near - High school), Mitra- Compound (Near -Hotel Deblok), Abash (Near Shitola Temple), Medinipur, West Bengal
 📧 dash.jyotirmoy1987@gmail.com
 📞 +91 9735836582
 
@@ -507,7 +507,7 @@ Continued enrollment after updates indicates acceptance of the revised policy. W
 For privacy-related questions or concerns:
 
 **Manobikash Guide Centre**
-📍 Patna Bazar, Jugnitala Main Road, Medinipur, West Bengal
+📍 Rangamati (Near - High school), Mitra- Compound (Near -Hotel Deblok), Abash (Near Shitola Temple), Medinipur, West Bengal
 📧 dash.jyotirmoy1987@gmail.com
 📞 +91 9735836582
 

@@ -18,7 +18,7 @@ export function OrganizationStructuredData() {
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Patna Bazar, Jugnitala Main Road",
+      streetAddress: "Rangamati (Near - High school), Mitra- Compound (Near -Hotel Deblok), Abash (Near Shitola Temple)",
       addressLocality: "Medinipur",
       addressRegion: "West Bengal",
       addressCountry: "IN",
@@ -71,7 +71,7 @@ export function EducationalOrganizationStructuredData() {
     url: siteConfig.url,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Patna Bazar, Jugnitala Main Road",
+      streetAddress: "Rangamati (Near - High school), Mitra- Compound (Near -Hotel Deblok), Abash (Near Shitola Temple)",
       addressLocality: "Medinipur",
       addressRegion: "West Bengal",
       addressCountry: "IN",

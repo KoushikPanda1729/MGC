@@ -33,7 +33,7 @@ const data = {
   },
 
   contact: {
-    address: "Patna Bazar, Jugnitala Main Road, Medinipur, West Bengal",
+    address: "Rangamati (Near - High school), Mitra- Compound (Near -Hotel Deblok), Abash (Near Shitola Temple), Medinipur, West Bengal",
     phone: "+91 9735836582",
     email: "dash.jyotirmoy1987@gmail.com",
     whatsapp: "+91 9735836582",
@@ -55,6 +55,7 @@ const contactInfo = [
     label: "Address",
     text: data.contact.address,
     link: `https://maps.google.com/?q=${encodeURIComponent(data.contact.address)}`,
+    target: "_blank",
   },
   {
     icon: IoMdMail,
@@ -181,10 +182,12 @@ export default function FooterSection() {
                 Contact
               </p>
               <ul className="mt-8 space-y-4 text-sm">
-                {contactInfo.map(({ icon: Icon, text, link, label }) => (
+                {contactInfo.map(({ icon: Icon, text, link, label, target }) => (
                   <li key={label}>
                     <Link
                       href={link}
+                      target={target || "_self"}
+                      rel={target === "_blank" ? "noopener noreferrer" : undefined}
                       className="flex items-center gap-3 justify-center sm:justify-start text-secondary-foreground/70 hover:text-primary transition"
                     >
                       <Icon className="text-primary size-5 shrink-0" />
